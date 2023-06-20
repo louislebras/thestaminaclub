@@ -12,10 +12,52 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: calc(85%);
+  width: calc(100%);
   margin-top: 10vh;
+
   p {
     width: 100%;
     text-align: left;
+  }
+
+  .text-classic {
+    padding-right: 5vw;
+  }
+
+  .classic-link {
+    margin-top: 5vh;
+  }
+}
+
+.lastone-home-indication {
+  position: relative;
+  margin-top: 20vh;
+  width: 100%;
+  img {
+    position: absolute;
+    left: -20vw;
+  }
+}
+
+.container-content-lastones {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .definition-container {
+    width: 85%;
+  }
+
+  .lastone-home-indication {
+    width: 85%;
+    margin-top: 15vh;
+    img {
+      position: relative;
+      left: 0;
+    }
+  }
+
+  .container-content-lastones {
+    margin-top: 5vh;
   }
 }

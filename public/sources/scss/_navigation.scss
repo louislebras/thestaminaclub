@@ -8,13 +8,13 @@ nav {
   border-radius: 500px;
   position: fixed;
   bottom: 4vh;
-  background: rgba(215, 213, 210, 0.58);
+  background: rgba(203, 197, 188, 0.58);
   backdrop-filter: blur(12.5px);
-  z-index: 100;
+  z-index: 101;
 }
 
 .nav-item {
-  padding: 10px 15px;
+  padding: 10px 15px 9px 15px;
   //   border: 1px solid blue;
   border-radius: 500px;
 }
@@ -23,8 +23,11 @@ nav {
   background-color: $staminalight1;
 }
 
-.menu-item {
+.active-item-menu {
   background-color: $staminalight1;
+}
+
+.menu-item {
   margin-right: 5px;
   cursor: pointer;
 }
@@ -34,7 +37,7 @@ nav {
 }
 
 @media (max-width: 800px) {
-  .nav-item {
-    padding: 10px 15px;
-  }
+  //   .nav-item {
+  //     padding: 10px 15px;
+  //   }
 }

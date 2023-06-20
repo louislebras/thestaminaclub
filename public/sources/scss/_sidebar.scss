@@ -2,17 +2,35 @@
 
 .sidebar {
   width: 35vw;
-  height: 70vh;
+  height: 80vh;
   background-color: $staminadark2;
   position: fixed;
   bottom: -100vh;
   border-radius: 10px;
-  //   z-index: 101;
+  z-index: 100;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   transition: 0.2s $easeOut;
+}
+
+.back-blur-layer-sidebar {
+  position: fixed;
+  background-color: #e6e6e600;
+  width: 100vw;
+  height: 100vh;
+  bottom: 0;
+  z-index: -10;
+  opacity: 0;
+  backdrop-filter: blur(20px);
+  transition: 0.2s $easeOut;
+  cursor: pointer;
+}
+
+.to-back-blur {
+  z-index: 99;
+  opacity: 1;
 }
 
 .close-sidebar {

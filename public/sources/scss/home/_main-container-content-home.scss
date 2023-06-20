@@ -1,0 +1,25 @@
+.main-container-content-home {
+  width: 100%;
+  //   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .big-text-classic {
+    margin-top: 20vh;
+    width: 100%;
+    margin-bottom: 5vh;
+  }
+
+  .transition-products-home-big-text {
+    padding-right: 5vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-container-content-home {
+    .big-text-classic {
+      width: 85%;
+    }
+  }
+}

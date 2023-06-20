@@ -12,7 +12,7 @@ a {
 .text-classic {
   font-family: "Stamina";
   font-size: calc(
-    22px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    25px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.03em;
   line-height: 130%;
@@ -21,6 +21,59 @@ a {
 @media (max-width: 800px) {
   .text-classic {
     font-size: 18px;
+  }
+}
+
+.big-text-classic {
+  font-family: "Stamina";
+  font-size: calc(
+    32px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.03em;
+  line-height: 130%;
+}
+
+@media (max-width: 800px) {
+  .big-text-classic {
+    font-size: 24px;
+  }
+}
+
+.classic-link {
+  text-transform: uppercase;
+  font-size: calc(
+    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  font-family: "Stamina Bold";
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+}
+
+.underlined-type1 {
+  outline: 0;
+  text-decoration: none;
+  color: currentColor;
+  position: relative;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+
+    border-width: 0 0 1px;
+    border-style: solid;
+  }
+}
+
+@media (max-width: 800px) {
+  .classic-link {
+    font-size: 12px;
+    line-height: 130%;
   }
 }
 
@@ -48,14 +101,20 @@ a {
   );
   font-family: "Stamina Bold";
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   line-height: 100%;
+  position: relative;
 }
 
 @media (max-width: 800px) {
   .nav-item-typo {
     font-size: 12px;
     line-height: 130%;
+  }
+
+  .mini-nav-item-typo {
+    font-size: 11px;
+    line-height: 100%;
   }
 }
 
@@ -77,4 +136,9 @@ a {
   .centered-bold-text {
     font-size: 12px;
   }
+}
+
+
+.text-block-classic {
+    
 }
