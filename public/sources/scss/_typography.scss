@@ -1,0 +1,80 @@
+@import "./fonts";
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.italic {
+  font-family: "Stamina Italic";
+}
+
+.text-classic {
+  font-family: "Stamina";
+  font-size: calc(
+    22px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.03em;
+  line-height: 130%;
+}
+
+@media (max-width: 800px) {
+  .text-classic {
+    font-size: 18px;
+  }
+}
+
+.nav-item-sidebar {
+  font-family: "Stamina";
+  font-size: calc(
+    32px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.03em;
+  line-height: 100%;
+}
+
+@media (max-width: 800px) {
+  .nav-item-sidebar {
+    font-size: 24px;
+    line-height: 130%;
+  }
+}
+
+.nav-item-typo {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc(
+    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  font-family: "Stamina Bold";
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 100%;
+}
+
+@media (max-width: 800px) {
+  .nav-item-typo {
+    font-size: 12px;
+    line-height: 130%;
+  }
+}
+
+.centered-bold-text {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: calc(
+    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  font-family: "Stamina Bold";
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 150%;
+}
+
+@media (max-width: 800px) {
+  .centered-bold-text {
+    font-size: 12px;
+  }
+}

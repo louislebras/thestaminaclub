@@ -1,0 +1,40 @@
+@import "./variables";
+
+nav {
+  width: fit-content;
+  display: flex;
+  //   border: 1px solid red;
+  padding: 4px 5px;
+  border-radius: 500px;
+  position: fixed;
+  bottom: 4vh;
+  background: rgba(215, 213, 210, 0.58);
+  backdrop-filter: blur(12.5px);
+  z-index: 100;
+}
+
+.nav-item {
+  padding: 10px 15px;
+  //   border: 1px solid blue;
+  border-radius: 500px;
+}
+
+.nav-item:hover {
+  background-color: $staminalight1;
+}
+
+.menu-item {
+  background-color: $staminalight1;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.club-item {
+  margin-right: 5px;
+}
+
+@media (max-width: 800px) {
+  .nav-item {
+    padding: 10px 15px;
+  }
+}

@@ -1,0 +1,48 @@
+@import "./reset", "./variables", "./fonts", "./loader", "./noise",
+  "./typography", "./navigation", "./loader", "./sidebar";
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: $staminalight1;
+}
+
+html {
+  padding: 0 4vw;
+}
+
+body {
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //   font-family: "Stamina" !important;
+  color: $staminadark1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 38vw;
+  //   border: 1px solid red;
+  padding-bottom: 30vh;
+}
+
+h1 {
+  font-family: "Stamina";
+}
+
+@media (max-width: 800px) {
+  html {
+    padding: 0 10px;
+    // border: 1px solid blue;
+  }
+  body {
+    margin: 0px 0;
+  }
+
+  main {
+    width: 100%;
+  }
+}

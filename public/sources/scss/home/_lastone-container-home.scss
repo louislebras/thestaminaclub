@@ -1,0 +1,21 @@
+@import "../variables";
+
+.lastone-container-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.definition-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: calc(85%);
+  margin-top: 10vh;
+  p {
+    width: 100%;
+    text-align: left;
+  }
+}

@@ -1,0 +1,77 @@
+@import "./variables";
+
+.sidebar {
+  width: 35vw;
+  height: 70vh;
+  background-color: $staminadark2;
+  position: fixed;
+  bottom: -100vh;
+  border-radius: 10px;
+  //   z-index: 101;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  transition: 0.2s $easeOut;
+}
+
+.close-sidebar {
+  color: $staminalight1;
+  margin-top: 20px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  background-color: $staminagrey1;
+  width: fit-content;
+  transition: $short $easeOut;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $staminalight1;
+    color: $staminadark1;
+  }
+}
+
+.indication-sidebar-txt {
+  color: $staminalight1;
+  width: 85%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.nav-menu-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: calc(85%);
+  margin-top: 10px;
+  color: $staminalight1;
+}
+
+.nav-item-sidebar {
+  margin-bottom: 13px;
+}
+
+.monogram-sidebar {
+  position: absolute;
+  bottom: 100px;
+  width: 7vw;
+}
+
+.to-left-menu {
+  opacity: 1;
+  bottom: 2vh;
+}
+
+@media (max-width: 800px) {
+  .sidebar {
+    width: calc(100% - 40px);
+    height: 75vh;
+  }
+
+  .nav-item-sidebar {
+    margin-bottom: 7px;
+  }
+
+  .monogram-sidebar {
+    width: 18%;
+  }
+}
