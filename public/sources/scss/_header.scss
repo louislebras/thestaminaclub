@@ -1,0 +1,27 @@
+@import "./variables";
+
+.logo-fixed-header {
+  height: 11vh;
+  position: fixed;
+  top: 2.5vw;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  opacity: 0;
+  z-index: 90;
+  transition: 0.3s ease;
+  mix-blend-mode: difference;
+
+  img {
+    height: 100%;
+  }
+}
+
+.darkHeader {
+  opacity: 1;
+}
+
+@media (max-width: 800px) {
+  .logo-fixed-header {
+    top: 5vh;
+  }
+}
