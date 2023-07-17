@@ -1,7 +1,7 @@
 @import "./variables";
 
 .logo-fixed-header {
-  height: 11vh;
+  height: 10vh;
   position: fixed;
   top: 2.5vw;
   left: 50%;
@@ -23,5 +23,6 @@
 @media (max-width: 800px) {
   .logo-fixed-header {
     top: 5vh;
+    height: 10vh;
   }
 }

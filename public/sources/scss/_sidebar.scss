@@ -23,7 +23,7 @@
   bottom: 0;
   z-index: -10;
   opacity: 0;
-  backdrop-filter: blur(20px);
+  backdrop-filter: blur(05px);
   transition: 0.2s $easeOut;
   cursor: pointer;
 }
@@ -72,6 +72,7 @@
   position: absolute;
   bottom: 100px;
   width: 7vw;
+  // opacity: 0;
 }
 
 .to-left-menu {

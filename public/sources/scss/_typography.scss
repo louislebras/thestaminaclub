@@ -9,18 +9,63 @@ a {
   font-family: "Stamina Italic";
 }
 
-.text-classic {
+.button {
+  padding: 10px 15px 9px 15px;
+  // border: 1px solid blue;
+  border-radius: 500px;
+  background-color: $staminalight1;
+  color: $staminadark1;
+  border: 1px solid transparent;
+  transition: $short $easeOut;
+  &:hover {
+    background-color: transparent;
+    border: 1px solid $staminalight1;
+    color: $staminalight1;
+  }
+}
+
+.text-small {
   font-family: "Stamina";
   font-size: calc(
-    25px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    22px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.03em;
   line-height: 130%;
 }
 
 @media (max-width: 800px) {
+  .text-small {
+    font-size: 14px;
+  }
+}
+
+.text-classic {
+  font-family: "Stamina";
+  font-size: calc(
+    26px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.03em;
+  line-height: 150%;
+}
+
+@media (max-width: 800px) {
   .text-classic {
     font-size: 18px;
+  }
+}
+
+.text-medium {
+  font-family: "Stamina";
+  font-size: calc(
+    28px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.03em;
+  line-height: 130%;
+}
+
+@media (max-width: 800px) {
+  .text-medium {
+    font-size: 21px;
   }
 }
 
@@ -30,12 +75,13 @@ a {
     32px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.03em;
-  line-height: 130%;
+  line-height: 140%;
+  // text-align: center;
 }
 
 @media (max-width: 800px) {
   .big-text-classic {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -97,7 +143,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-size: calc(
-    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    17px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   font-family: "Stamina Bold";
   text-transform: uppercase;
@@ -108,7 +154,7 @@ a {
 
 @media (max-width: 800px) {
   .nav-item-typo {
-    font-size: 12px;
+    font-size: 11px;
     line-height: 130%;
   }
 
@@ -123,7 +169,7 @@ a {
   text-align: center;
   text-transform: uppercase;
   font-size: calc(
-    18px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    17px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   font-family: "Stamina Bold";
   font-weight: 800;
@@ -134,6 +180,6 @@ a {
 
 @media (max-width: 800px) {
   .centered-bold-text {
-    font-size: 12px;
+    font-size: 11px;
   }
 }

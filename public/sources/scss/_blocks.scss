@@ -2,11 +2,12 @@
 
 .content-block-classic {
   width: 100%;
-  height: 80vh;
+  height: 83vh;
   //   border: 1px solid red;
   position: relative;
   border-radius: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .little-block-content {
@@ -19,14 +20,56 @@
   width: 100%;
   padding: 15px 15px;
   position: absolute;
+  z-index: 50;
 
   a {
-    padding: 10px 15px 9px 15px;
+    padding: 1.5vh 15px 1.3vh;
     // border: 1px solid blue;
     border-radius: 500px;
     background-color: $staminalight1;
     color: $staminadark1;
     transition: $short $easeOut;
+    height: fit-content;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+}
+
+.infos-double-link-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 15px;
+  position: absolute;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .second-text-infos {
+      background-color: $staminadark3;
+      color: $staminalight1;
+      text-align: left;
+      margin-top: 10px;
+    }
+  }
+
+  .link-solo-double {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  a {
+    padding: 1.5vh 15px 1.3vh;
+    // border: 1px solid blue;
+    border-radius: 500px;
+    background-color: $staminalight1;
+    color: $staminadark1;
+    transition: $short $easeOut;
+    height: fit-content;
 
     &:hover {
       transform: scale(1.03);
@@ -81,7 +124,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px 9px 15px;
+    padding: 1.5vh 15px 1.3vh;
     // border: 1px solid blue;
     border-radius: 500px;
     background-color: $staminalight1;

@@ -1,0 +1,45 @@
+@import "./variables";
+
+.full-centered-block-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  padding: 2.5vw 2.5vw;
+
+  p {
+    text-align: center;
+  }
+}
+
+.bottom-text {
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.top-text {
+  padding: 15px 20px;
+  position: absolute;
+  top: 0;
+}
+
+.keywords-list-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+
+  span {
+    border: 1px solid $staminadark1;
+    border-radius: 300px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 8px 4px 8px;
+    line-height: 100%;
+    margin-right: 7px;
+    margin-bottom: 7px;
+  }
+}

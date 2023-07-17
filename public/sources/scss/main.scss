@@ -1,6 +1,6 @@
 @import "./reset", "./variables", "./fonts", "./loader", "./noise",
   "./typography", "./header", "./navigation", "./loader", "./sidebar",
-  "./blocks";
+  "./blocks", "./content-blocks", "./specific-blocks", "./footer";
 
 html,
 body {
@@ -27,7 +27,11 @@ body {
 main {
   width: 38vw;
   //   border: 1px solid red;
-  padding-bottom: 30vh;
+  // padding-bottom: 30vh;
+}
+
+.mobile-only {
+  display: none;
 }
 
 h1 {
@@ -45,5 +49,9 @@ h1 {
 
   main {
     width: 100%;
+  }
+
+  .mobile-only {
+    display: block;
   }
 }
