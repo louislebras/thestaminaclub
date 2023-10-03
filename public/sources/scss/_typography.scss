@@ -1,5 +1,12 @@
-@import "./fonts";
+@import "./fonts", "./variables";
 
+.color-light {
+  color: $staminalight1;
+}
+
+.color-dark {
+  color: $staminadark1;
+}
 a {
   color: currentColor;
   text-decoration: none;
@@ -9,8 +16,76 @@ a {
   font-family: "Stamina Italic";
 }
 
+@media (max-width: 800px) {
+  .button-feed {
+    margin-left: 7.5%;
+  }
+}
+
+.main-title {
+  font-family: "Stamina";
+  font-size: calc(
+    96px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+.main-title2 {
+  font-family: "Stamina";
+  font-size: calc(
+    64px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .main-title2 {
+    font-size: 42px;
+  }
+}
+
+.main-title3 {
+  font-family: "Stamina";
+  font-size: calc(
+    48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .main-title3 {
+    font-size: 25px;
+  }
+}
+
+.secondary-title {
+  font-family: "Stamina";
+  font-size: calc(
+    48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 120%;
+  font-weight: 400;
+}
+
+.mini-block-title {
+  font-family: "Stamina";
+  font-size: calc(
+    36px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 120%;
+  font-weight: 400;
+}
+
 .button {
-  padding: 10px 15px 9px 15px;
+  padding: 1.8vh 15px 1.7vh;
   // border: 1px solid blue;
   border-radius: 500px;
   background-color: $staminalight1;
@@ -20,6 +95,21 @@ a {
   &:hover {
     background-color: transparent;
     border: 1px solid $staminalight1;
+    color: $staminalight1;
+  }
+}
+
+.button2 {
+  padding: 1.8vh 15px 1.7vh;
+  // border: 1px solid blue;
+  border-radius: 500px;
+  background-color: $staminalight1;
+  color: $staminadark1;
+  border: 1px solid transparent;
+  transition: $short $easeOut;
+  &:hover {
+    background-color: $staminadark3;
+    border: 1px solid $staminadark3;
     color: $staminalight1;
   }
 }
@@ -45,27 +135,12 @@ a {
     26px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.03em;
-  line-height: 150%;
+  line-height: 130%;
 }
 
 @media (max-width: 800px) {
   .text-classic {
     font-size: 18px;
-  }
-}
-
-.text-medium {
-  font-family: "Stamina";
-  font-size: calc(
-    28px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
-  );
-  letter-spacing: -0.03em;
-  line-height: 130%;
-}
-
-@media (max-width: 800px) {
-  .text-medium {
-    font-size: 21px;
   }
 }
 
@@ -81,7 +156,7 @@ a {
 
 @media (max-width: 800px) {
   .big-text-classic {
-    font-size: 23px;
+    font-size: 22px;
   }
 }
 

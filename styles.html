@@ -4,14 +4,562 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Stamina Club®</title>
+    <link rel="stylesheet" href="./public/sources/css/main.css">
+    <link rel="stylesheet" href="./public/sources/css/home/main-home.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
 </head>
 
 <body>
+
+    <nav>
+
+        <div class="nav-item nav-item-typo menu-item burger active-item-menu">Menu ✦</div>
+        <a class="nav-item nav-item-typo" href="">Le Club</a>
+        <a class="nav-item nav-item-typo" href="">Le Stamina OS®</a>
+        <!-- <a class="nav-item nav-item-typo" href="">Brand OS®</a> -->
+    </nav>
+    <div class="back-blur-layer-sidebar"></div>
+    <a href="./" class="logo-fixed-header">
+        <img src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
+    </a>
+    <div class="sidebar">
+        <div class="close-sidebar nav-item-typo">
+            ✦ Fermer le menu ✦
+        </div>
+
+        <!-- <p class="nav-item-typo indication-sidebar-txt">All you need<br>
+            for the rest of your life
+        </p> -->
+
+        <div class="nav-menu-sidebar">
+            <a class="nav-item-sidebar" href="">Home</a>
+            <a class="nav-item-sidebar" href="">Le Club</a>
+            <a class="nav-item-sidebar" href="">Le <span class="italic">Stamina</span> OS</a>
+            <a class="nav-item-sidebar" href="">Le Journal de la Stamina</a>
+            <a class="nav-item-sidebar" href="">Inspiration Quotidienne </a>
+            <a class="nav-item-sidebar" href=""><span class="italic">Produits & Savoirs d'Exception</span></a>
+            <a class="nav-item-sidebar" href="">La Conciergerie Privée</a>
+        </div>
+
+        <img class="monogram-sidebar" src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
+    </div>
+
     <main>
-        
+
+        <section class="heading-home">
+            <img class="logo-home-heading" src="./public/content/brand-assets/logo-staminaclub-black.svg" alt="">
+
+            <p class="centered-bold-text description-heading-home-1">Club privé d'entrepreneurs.
+                <br> La seule et unique obligation de l'Homme <br> est de créer sa propre légende. <br>
+
+                Bienvenue au Stamina Club®. <br>
+
+            </p>
+            <audio id="audio" loop src="./public/content/sounds/sounds-audio-waves.mp3"></audio>
+
+            <img id="play" class="icon-sound-stamina" src="./public/content/svg-assets/button-sound-stamina.svg" alt="">
+
+            <p class="centered-bold-text description-heading-home-2">Là d’où viennent ceux qui ont le choix.
+            </p>
+
+            <video class="video-heading-home" autoplay muted loop playsinline
+                src="./public/content/medias/staminaclub-waves.mp4"></video>
+        </section>
+
+        <!-- INTRO TEXT + LAST ONES INDICATION -->
+        <section class="lastone-container-home">
+
+            <div class="big-text-classic">
+                <h2 class="secondary-title">Il est temps.</h2>
+                <br>
+                <p>
+
+                    De passer à une <span class="italic">nouvelle</span> étape.
+                    <br>
+                    <br>
+
+                    D'accomplir votre vision. <br>
+                    De révéler votre plein potentiel. <br>
+                    De laisser une trace. Une empreinte. <br>
+                    De créer quelque chose de <span class="italic">singulier</span>. <br>
+                    De performant. De stable. <br>
+                    De devenir autonome. <br>
+                    De reprendre le contrôle.
+                    <br>
+                    <br>
+
+                    Pas de déserteurs face au destin. <br>
+                    On naît pour s'accomplir. <br>
+                    Rien d'autre.
+                    <br>
+                    <br>
+
+                    En tant qu'Individu. <br>
+                    En tant que Marque.
+
+                    <br>
+                    <br>
+
+                    Bienvenue au<span class="italic"> Stamina Club™.</span> <br> <br>
+                    Le seul endroit sur Terre, <br>
+                    Où vous trouverez tous ce dont vous aurez besoin, pour accomplir votre
+                    vision
+                    et créer votre propre légende.
+                    <br>
+                    <br>
+
+                    Une boussole.
+                    Un guide. <br>
+                    Un conseiller.
+                    Un instigateur.
+                    <br> <br>
+                    Stratégie. Art de vivre. Business. <br> Self-care. Branding. <span class="italic">Vision</span>.
+
+
+
+                </p>
+            </div>
+            <div class="definition-container">
+                <p class="nav-item-typo">stamina / nom indénombrable<br></p>
+                <p class="text-classic">
+
+                    Endurance, résistance, persévérance ; <br> <br>
+
+                    Énergie et force de continuer à faire quelque chose pendant longtemps. Capacité à soutenir un
+                    effort, une épreuve
+                    légendaire pour atteindre une vision. Seule et unique source de succès.
+                </p>
+
+            </div>
+            <div class="lastone-home-indication">
+                <img src="./public/content/brand-assets/lastones-indication-staminaclub.svg" alt="">
+            </div>
+
+
+        </section>
+
+        <section class="main-container-content-home">
+            <!--  LAST ONES CONTENT -->
+            <div class="last-ones-content">
+
+                <!--  LAST ONES CONTENT / Livre Vision -->
+                <div class="content-block-mini red-block">
+                    <div class="infos-link-block infos-link-block-bottom">
+                        <a class="nav-item-typo" href="">OBTENIR LE LIVRE</a>
+                        <a class="nav-item-typo" href="">0.99 € ↗︎</a>
+                    </div>
+                    <div class="inside-mini-block color-light">
+                        <p class="mini-block-title">
+                            <span class="italic">Vision</span> : La clé du succès
+                        </p>
+                        <p class="text-small"> Le seul programme pour avoir le choix. <br>
+                            Le reste de votre vie.</p>
+
+
+                    </div>
+                </div>
+
+                <!--  LAST ONES CONTENT / ??? -->
+                <div class="content-block-mini light-block">
+                    <div class="infos-link-block infos-link-block-bottom">
+                        <a class="nav-item-typo" href="">Le Stamina OS®</a>
+                        <a class="nav-item-typo" href="">179€ ↗︎</a>
+                    </div>
+                    <div class="inside-mini-block color-dark">
+                        <p class="mini-block-title">
+                            <span class="italic">Vision</span> : La clé du succès
+                        </p>
+                        <p class="text-small"> Le seul programme pour avoir le choix. <br>
+                            Le reste de votre vie.</p>
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="main-spacer"></div>
+
+            <!--  ACTE 1 -->
+            <div class="big-text-classic intro-section-text">
+                <h3 class="main-title"> <span class="italic">Acte</span> 1</h3>
+                <br>
+                Entre dans l'univers du Stamina Club et accéde aux grands secrets du <span class="italic">succès</span>,
+                du <span class="italic">bonheur</span> et de la <span class="italic">persévérance</span>. <br> <br>
+
+                <p class="text-classic">
+                    <span class="italic">Habitudes à succès, Clés de Bien-Être et d'Accomplissement, Équilibre et Santé
+                        Mentale, Interviews,
+                        Coaching
+                        Privé, Inspiration, Secrets de
+                        Discipline,
+                        Plans de vie.
+                    </span>
+                </p>
+
+
+
+            </div>
+            <!--  ACTE 1 / Livre Vision -->
+            <div class="content-block-mini red-block">
+                <div class="infos-link-block infos-link-block-bottom">
+                    <a class="nav-item-typo" href="">OBTENIR LE LIVRE</a>
+                    <a class="nav-item-typo" href="">0.99 € ↗︎</a>
+                </div>
+                <div class="inside-mini-block color-light">
+                    <p class="mini-block-title">
+                        <span class="italic">Vision</span> : La clé du succès
+                    </p>
+                    <p class="text-small"> Le seul programme pour avoir le choix. <br>
+                        Le reste de votre vie.</p>
+
+
+                </div>
+            </div>
+            <!--  ACTE 1 / StaminaOS -->
+            <div class="content-block-classic dark-block full-centered-block-content stamina-os-block">
+                <div class="infos-link-block infos-link-block-top">
+                    <a class="nav-item-typo" href="">Le Stamina OS®</a>
+                    <a class="nav-item-typo" href="">↗︎</a>
+                </div>
+                <img class="logo-chrome-os" src="./public/content/brand-assets/logo-chrome-staminaos-staminaclub.png"
+                    alt="">
+                <div class="container-infos-block">
+                    <img src="" alt="">
+                    <p class="text-classic"> Le <span class="italic">système</span>, la <span
+                            class="italic">méthode</span> et les
+                        <span class="italic">secrets</span> <br> pour
+                        transformer votre vie en 3
+                        mois. <br> Réussite, bien-être, accomplissement : le guide pour obtenir tout ce que vous
+                        voulez
+                        vraiment dans votre vie.<br> <br>
+
+
+                    </p>
+
+
+                </div>
+                <a class="button nav-item-typo" href="">Ouvrir maintenant</a>
+            </div>
+
+            <div class="main-spacer"></div>
+
+            <!--  ACTE 2 -->
+            <div class="big-text-classic intro-section-text">
+                <h3 class="main-title"> <span class="italic">Acte</span> 2</h3>
+                <br>
+                Entre dans l'univers du Stamina Club et accéde aux grands secrets du <span class="italic">succès</span>,
+                du <span class="italic">bonheur</span> et de la <span class="italic">persévérance</span>. <br> <br>
+
+                <p class="text-classic">
+                    <span class="italic">Habitudes à succès, Clés de Bien-Être et d'Accomplissement, Équilibre et Santé
+                        Mentale, Interviews,
+                        Coaching
+                        Privé, Inspiration, Secrets de
+                        Discipline,
+                        Plans de vie.
+                    </span>
+                </p>
+
+
+
+            </div>
+
+            <!--  ACTE 2 / BrandOS -->
+            <div class="content-block-classic dark-block full-centered-block-content stamina-os-block">
+                <div class="infos-link-block infos-link-block-top">
+                    <a class="nav-item-typo" href="">Le Stamina OS®</a>
+                    <a class="nav-item-typo" href="">↗︎</a>
+                </div>
+                <img class="logo-chrome-os" src="./public/content/brand-assets/logo-chrome-staminaos-staminaclub.png"
+                    alt="">
+                <div class="container-infos-block">
+                    <img src="" alt="">
+                    <p class="text-classic"> Le <span class="italic">système</span>, la <span
+                            class="italic">méthode</span> et les
+                        <span class="italic">secrets</span> <br> pour
+                        transformer votre vie en 3
+                        mois. <br> Réussite, bien-être, accomplissement : le guide pour obtenir tout ce que vous
+                        voulez
+                        vraiment dans votre vie.<br> <br>
+
+
+                    </p>
+
+
+                </div>
+                <a class="button nav-item-typo" href="">Ouvrir maintenant</a>
+            </div>
+
+            <div class="main-spacer"></div>
+            <!--  ACTE 3 -->
+            <div class="big-text-classic intro-section-text">
+                <h3 class="main-title"> <span class="italic">Acte</span> 3</h3>
+                <br>
+                Entre dans l'univers du Stamina Club et accéde aux grands secrets du <span class="italic">succès</span>,
+                du <span class="italic">bonheur</span> et de la <span class="italic">persévérance</span>. <br> <br>
+
+                <p class="text-classic">
+                    <span class="italic">Habitudes à succès, Clés de Bien-Être et d'Accomplissement, Équilibre et Santé
+                        Mentale, Interviews,
+                        Coaching
+                        Privé, Inspiration, Secrets de
+                        Discipline,
+                        Plans de vie.
+                    </span>
+                </p>
+
+
+
+            </div>
+
+            <!--  ACTE 3 / Consulting Offer-->
+            <div class="content-block-classic dark-block full-centered-block-content stamina-os-block">
+                <div class="infos-link-block infos-link-block-top">
+                    <a class="nav-item-typo" href="">Le Stamina OS®</a>
+                    <a class="nav-item-typo" href="">↗︎</a>
+                </div>
+                <img class="logo-chrome-os" src="./public/content/brand-assets/logo-chrome-staminaos-staminaclub.png"
+                    alt="">
+                <div class="container-infos-block">
+                    <img src="" alt="">
+                    <p class="text-classic"> Le <span class="italic">système</span>, la <span
+                            class="italic">méthode</span> et les
+                        <span class="italic">secrets</span> <br> pour
+                        transformer votre vie en 3
+                        mois. <br> Réussite, bien-être, accomplissement : le guide pour obtenir tout ce que vous
+                        voulez
+                        vraiment dans votre vie.<br> <br>
+
+
+                    </p>
+
+
+                </div>
+                <a class="button nav-item-typo" href="">Ouvrir maintenant</a>
+            </div>
+
+
+            <div class="main-spacer"></div>
+            <!--  ABOUT STAMINA CLUB -->
+            <div class="big-text-classic  intro-section-text transition-products-home-big-text">
+                <img class="identity-staminaclub-transition"
+                    src="./public/content/brand-assets/identity-staminaclub-dark.svg" alt="">
+                <br> <br> <br>
+
+                Club privé du <span class="italic">bien-être</span>,
+                du <span class="italic">succès</span>, <br> de la <span class="italic">réussite</span>, de l'<span
+                    class="italic">accomplissement</span>, <br> et de la <span class="italic">discipline</span>.
+                <br> <br>
+
+                Habitudes et rythmes à succès. <br>
+                Programmes d'accomplissement. <br>
+                Guides de vision et de business. <br>
+                Plans et stratégies de vision. <br>
+                Méthodes business, branding. <br>
+                Lettre privées d'entrepreneurs. <br>
+                Plateforme d'Inspiration. <br>
+                Coaching personnel privé. <br>
+                Conseil business. <br>
+                <br>
+
+                <a class="classic-link underlined-type1" href="">↗︎ Découvrir l'origine du Club</a> <br>
+                <a class="classic-link underlined-type1" href="">↗︎ La Vision du Club</a>
+
+            </div>
+
+            <div class="double-content-block-classic">
+                <div class="item-double-content-block light-block double-content-block-coaching">
+
+                    <p class="text-small top-text">Ici photo inspi Old Money
+                    </p>
+
+                </div>
+                <div class="item-double-content-block dark-block double-content-block-coaching coaching-prive">
+
+                    <p class="text-small top-text">Ici Photo Shooting de dos avce le t-shirt du Stamina Club
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="main-spacer"></div>
+            <!--  LA CONCIERGERIE -->
+            <div class="big-text-classic intro-section-text">
+                <h3 class="secondary-title"><span class="italic">La</span> Conciergerie <br>
+                    du <span class="italic">Stamina Club™</span></h3>
+                <br>
+                <p class="text-classic">
+                    <span class="italic">Habitudes à succès, Clés de Bien-Être et d'Accomplissement, Équilibre et Santé
+                        Mentale, Interviews,
+                        Coaching
+                        Privé, Inspiration, Secrets de
+                        Discipline,
+                        Plans de vie.
+                    </span>
+                </p>
+            </div>
+
+            <!--  LA CONCIERGERIE / INSPI PLATFORM -->
+            <div class="content-block-classic light-block inspiration-container">
+                <div class="infos-link-block infos-link-block-bottom">
+                    <a class="nav-item-typo" href="">Inspiration</a>
+                    <a class="nav-item-typo" href="">New ↗︎</a>
+                </div>
+                <div class="top-text">
+                    <p class="text-medium">
+                        Une vraie plateforme d’inspiration. <br>
+                        Sans distraction. Pour stimuler sa vision. <br>
+                        Plans, Méthodes, Outils.
+                    </p>
+                    <div class="keywords-list-block">
+                        <span class="nav-item-typo">Réussite</span> <span class="nav-item-typo">Épanouissement</span>
+                        <span class="nav-item-typo">Succès</span>
+                        <span class="nav-item-typo">Discipline</span>
+                        <span class="nav-item-typo">Livres</span>
+
+                    </div>
+
+                </div>
+                <img src="./public/content/medias/inspiration-plateform-cover-home-staminaclub.png" alt="">
+            </div>
+            <!--  LA CONCIERGERIE / COACHING OFFERS -->
+            <div class="double-content-block-classic">
+                <div class="item-double-content-block light-block double-content-block-coaching">
+                    <a class="infos-link-double-block double-infos-link-block-bottom" href="">
+                        <div>
+                            <p class="nav-item-typo mini-nav-item-typo">Coaching call</p>
+                            <p class="nav-item-typo mini-nav-item-typo">↗︎</p>
+                        </div>
+
+                    </a>
+                    <p class="text-small top-text">Règle ton problème. <br> <br>
+                        <span class="italic">Coaching Call d'1h.
+                            <br> Business, Perso, Conseils.
+                            <br> Et bien plus.
+                        </span>
+                    </p>
+                    <img src="./public/content/svg-assets/coaching-call-cover-stamina-club.svg" alt="">
+                </div>
+                <div class="item-double-content-block dark-block double-content-block-coaching coaching-prive">
+                    <a class="infos-link-double-block double-infos-link-block-bottom" href="">
+                        <div>
+                            <p class="nav-item-typo mini-nav-item-typo">Coaching Privé</p>
+                            <p class="nav-item-typo mini-nav-item-typo">↗︎</p>
+                        </div>
+                    </a>
+                    <p class="text-small top-text">Change de vie en 3 mois. <br> <br>
+                        <span class="italic">Coaching Privé de 3 mois.
+                            Accompagnement perso.
+                            Secrets, Vision, Business...
+                        </span>
+                    </p>
+                    <img src="./public/content/svg-assets/coaching-prive-cover-stamina-club.svg" alt="">
+                </div>
+            </div>
+            <!--  LA CONCIERGERIE / MERCH -->
+            <div class="content-block-classic little-block-content light-block home-private-collection">
+                <div class="infos-link-block infos-link-block-top">
+                    <a class="nav-item-typo" href="">Stamina Private Collection</a>
+                    <a class="nav-item-typo" href="">↗︎</a>
+                </div>
+                <img src="./public/content/medias/test-model.png" alt="">
+                <a href="" class="button2 nav-item-typo">Pré-commander</a>
+            </div>
+
+
+        </section>
+
+        <footer>
+            <div class="first-part-footer-links">
+                <div class="list-items-footer">
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">01</p>
+                        <p class="title-item-footer big-text-classic ">Le Club</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">02</p>
+                        <p class="title-item-footer big-text-classic ">La Vision</p>
+                    </a>
+                    <a href="" class="item-footer-list ">
+                        <p class="nav-item-typo">03</p>
+                        <p class="title-item-footer big-text-classic ">Le Stamina OS™</p>
+                    </a>
+                    <a href="" class="item-footer-list ">
+                        <p class="nav-item-typo">04</p>
+                        <p class="title-item-footer big-text-classic ">Le Brand OS™</p>
+                    </a>
+
+                </div>
+                <div class="list-items-footer">
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">05</p>
+                        <p class="title-item-footer big-text-classic ">Journal & News</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">06</p>
+                        <p class="title-item-footer big-text-classic ">Le Sanctuaire du Club</p>
+                    </a>
+                    <a href="" class="item-footer-list ">
+                        <p class="nav-item-typo">07</p>
+                        <p class="title-item-footer big-text-classic ">Conseil & Consulting</p>
+                    </a>
+
+
+                </div>
+                <div class="list-items-footer">
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">08</p>
+                        <p class="title-item-footer big-text-classic "> Les Lettres Privées</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">09</p>
+                        <p class="title-item-footer big-text-classic ">La Conciergerie</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">10</p>
+                        <p class="title-item-footer big-text-classic "> Coaching</p>
+                    </a>
+
+
+                </div>
+                <div class="list-items-footer">
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">11</p>
+                        <p class="title-item-footer big-text-classic ">Contact</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">12</p>
+                        <p class="title-item-footer big-text-classic ">Press Kit</p>
+                    </a>
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">13</p>
+                        <p class="title-item-footer big-text-classic ">Jobs</p>
+                    </a>
+
+                    <a href="" class="item-footer-list">
+                        <p class="nav-item-typo">14</p>
+                        <p class="title-item-footer big-text-classic ">Infos & Mentions Légales</p>
+                    </a>
+
+                </div>
+
+            </div>
+
+            <img class="footer-logo footer-logo-desktop"
+                src="./public/content/brand-assets/identity-logo-footer-desktop-dark.svg" alt="">
+            <img class="footer-logo footer-logo-mobile"
+                src="./public/content/brand-assets/identity-logo-footer-mobile-dark.svg" alt="">
+
+        </footer>
     </main>
+    <script src="./public/sources/js/sound-button.js"></script>
+    <script src="./public/sources/js/burger.js"></script>
+    <script src="./public/sources/js/fixed-header.js"></script>
 </body>
 
 </html>
