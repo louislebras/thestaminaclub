@@ -28,6 +28,8 @@
 
   .inside-mini-block {
     padding: 25px 25px;
+    z-index: 30;
+    position: relative;
     .text-small {
       margin-top: 5px;
     }
@@ -94,10 +96,9 @@
 }
 
 .floating-image-classic-block {
-  width: 55%;
-  height: auto;
+  height: 37vh;
   position: absolute;
-  top: 63%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   filter: saturate(0.9);
@@ -111,12 +112,12 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 15px 15px;
+  padding: 20px 20px;
   position: absolute;
   z-index: 50;
 
   a {
-    padding: 1.5vh 15px 1.3vh;
+    padding: 1.45vh 16px 1.3vh;
     // border: 1px solid blue;
     border-radius: 500px;
     background-color: $staminalight1;
