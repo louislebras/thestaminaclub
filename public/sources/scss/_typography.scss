@@ -86,7 +86,7 @@ a {
 
 @media (max-width: 800px) {
   .mini-block-title {
-    font-size: 28px;
+    font-size: 26px;
   }
 }
 
@@ -123,7 +123,7 @@ a {
 .text-small {
   font-family: "Stamina";
   font-size: calc(
-    22px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    23px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.03em;
   line-height: 130%;
@@ -131,7 +131,7 @@ a {
 
 @media (max-width: 800px) {
   .text-small {
-    font-size: 14px;
+    font-size: 15px;
   }
 }
 
