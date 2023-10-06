@@ -28,7 +28,7 @@
       transition: 0.3s;
       position: relative;
       opacity: 1;
-      width: 16vw;
+      width: 12vw;
     }
   }
 
@@ -75,10 +75,10 @@
 @media (max-width: 800px) {
   .loader {
     .container-img-loader {
-      top: 41.4vh;
+      top: 43vh;
       left: 50%;
       img {
-        width: 40vw;
+        width: 25vw;
       }
     }
   }

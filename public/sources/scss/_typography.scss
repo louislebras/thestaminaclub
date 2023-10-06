@@ -48,21 +48,21 @@ a {
   }
 }
 
-.main-title3 {
-  font-family: "Stamina";
-  font-size: calc(
-    48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
-  );
-  letter-spacing: -0.05em;
-  line-height: 100%;
-  font-weight: 400;
-}
+// .main-title3 {
+//   font-family: "Stamina";
+//   font-size: calc(
+//     48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+//   );
+//   letter-spacing: -0.05em;
+//   line-height: 100%;
+//   font-weight: 400;
+// }
 
-@media (max-width: 800px) {
-  .main-title3 {
-    font-size: 25px;
-  }
-}
+// @media (max-width: 800px) {
+//   .main-title3 {
+//     font-size: 2px;
+//   }
+// }
 
 .secondary-title {
   font-family: "Stamina";
@@ -82,6 +82,12 @@ a {
   letter-spacing: -0.05em;
   line-height: 120%;
   font-weight: 400;
+}
+
+@media (max-width: 800px) {
+  .mini-block-title {
+    font-size: 28px;
+  }
 }
 
 .button {
@@ -156,7 +162,7 @@ a {
 
 @media (max-width: 800px) {
   .big-text-classic {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
