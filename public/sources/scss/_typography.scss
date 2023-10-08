@@ -25,17 +25,7 @@ a {
 .main-title {
   font-family: "Stamina";
   font-size: calc(
-    96px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
-  );
-  letter-spacing: -0.05em;
-  line-height: 100%;
-  font-weight: 400;
-}
-
-.main-title2 {
-  font-family: "Stamina";
-  font-size: calc(
-    64px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    58px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
   letter-spacing: -0.05em;
   line-height: 100%;
@@ -43,36 +33,12 @@ a {
 }
 
 @media (max-width: 800px) {
-  .main-title2 {
+  .main-title {
     font-size: 42px;
   }
 }
 
-// .main-title3 {
-//   font-family: "Stamina";
-//   font-size: calc(
-//     48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
-//   );
-//   letter-spacing: -0.05em;
-//   line-height: 100%;
-//   font-weight: 400;
-// }
 
-// @media (max-width: 800px) {
-//   .main-title3 {
-//     font-size: 2px;
-//   }
-// }
-
-.secondary-title {
-  font-family: "Stamina";
-  font-size: calc(
-    48px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
-  );
-  letter-spacing: -0.05em;
-  line-height: 120%;
-  font-weight: 400;
-}
 
 .mini-block-title {
   font-family: "Stamina";
@@ -106,7 +72,7 @@ a {
 }
 
 .button2 {
-  padding: 1.8vh 15px 1.7vh;
+  padding: 1.8vh 20px 1.7vh;
   // border: 1px solid blue;
   border-radius: 500px;
   background-color: $staminalight1;
@@ -116,6 +82,22 @@ a {
   &:hover {
     background-color: $staminadark3;
     border: 1px solid $staminadark3;
+    color: $staminalight1;
+  }
+}
+
+.button3 {
+  padding: 1.8vh 20px 1.7vh;
+  // border: 1px solid blue;
+  border-radius: 500px;
+  background-color: $staminalight1;
+  color: $staminadark1;
+  border: 1px solid transparent;
+  transition: $short $easeOut;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.052);
+    backdrop-filter: blur(10px);
+    border: 1px solid $staminalight1;
     color: $staminalight1;
   }
 }
