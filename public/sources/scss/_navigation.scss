@@ -14,7 +14,7 @@ nav {
 }
 
 .nav-item {
-  padding: 1.5vh 15px 1.4vh;
+  padding: 1.7vh 15px 1.6vh;
   //   border: 1px solid blue;
   border-radius: 500px;
 }
@@ -36,8 +36,14 @@ nav {
   margin-right: 5px;
 }
 
+@media (min-width: 1400px) {
+  .nav-item {
+    padding: 1.2vh 20px 1.07vh;
+  }
+}
+
 @media (max-width: 800px) {
   .nav-item {
-    padding: 1.3vh 15px 1.2vh;
+    padding: 1.7vh 15px 1.6vh;
   }
 }

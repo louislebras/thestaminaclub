@@ -1,0 +1,119 @@
+@import "../variables";
+
+.heading-sanctum {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container-description-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+
+    a,
+    p {
+      height: fit-content;
+    }
+
+    img {
+      width: 6vw;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -0%);
+    }
+  }
+}
+
+.logo-sanctum-heading-page {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .logo-sanctum-heading-page {
+    width: 95%;
+    margin-top: 20px;
+  }
+  .container-description-heading {
+    flex-direction: column;
+    margin-top: 20px !important;
+    img {
+      width: 40px !important;
+      top: 40px !important;
+    }
+  }
+}
+
+.main-content-sanctum-heading {
+  width: 100%;
+  height: 70vh;
+  background-color: $staminadark1;
+  border-radius: 8px;
+  margin-top: 10vh;
+  padding: 10px;
+  position: relative;
+
+  .main-cover-sanctum {
+    width: 100%;
+    border-radius: 6px;
+    position: relative;
+    height: 100%;
+    object-fit: cover;
+    // filter: saturate(0.5);
+  }
+
+  .article-main-sanctum-heading {
+    width: 28vw;
+    height: 35vh;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(21, 21, 21, 0.434);
+    backdrop-filter: blur(15px);
+    border-radius: 6px;
+    padding: 20px 25px;
+    color: $staminalight1;
+    border: 0.5px solid rgba(255, 255, 255, 0.3);
+
+    .text-small {
+      margin-top: 15px;
+    }
+
+    .infos-link-block {
+      left: 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .main-content-sanctum-heading {
+    margin-top: 13vh;
+    height: 85vh;
+    padding: 0;
+
+    .article-main-sanctum-heading {
+      background: none;
+      backdrop-filter: none;
+      height: calc(100% - 20px);
+      top: 10px;
+      left: 10px;
+      width: calc(100% - 20px);
+      border: none;
+      padding: 15px;
+      display: flex;
+      //   justify-content: flex-end;
+      align-items: flex-end;
+
+      .description-main-content {
+        margin-bottom: 50px;
+        backdrop-filter: blur(5px);
+        border-radius: 5px;
+        padding: 15px 15px 30px;
+        background: rgba(21, 21, 21, 0.434);
+      }
+    }
+  }
+}

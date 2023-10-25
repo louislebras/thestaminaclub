@@ -1,0 +1,39 @@
+@import "./headingsanctum", "../variables", "./maincontentsanctum";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: calc(100vw - 8vw);
+  padding-top: 3vw;
+}
+
+footer {
+  width: 92vw;
+  margin-left: 0vw;
+}
+
+.big-text-classic {
+  line-height: 115%;
+}
+
+.light-text {
+  color: $staminalight1;
+}
+
+.dark-block {
+  background-color: $staminadark3;
+}
+
+@media (max-width: 800px) {
+  .logo-fixed-header {
+    display: none;
+  }
+
+  .big-text-classic {
+    font-size: 26px;
+  }
+}

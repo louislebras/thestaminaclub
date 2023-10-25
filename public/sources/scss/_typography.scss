@@ -38,7 +38,21 @@ a {
   }
 }
 
+.secondary-title {
+  font-family: "Stamina";
+  font-size: calc(
+    46px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+  );
+  letter-spacing: -0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}
 
+@media (max-width: 800px) {
+  .secondary-title {
+    font-size: 28px;
+  }
+}
 
 .mini-block-title {
   font-family: "Stamina";
@@ -86,6 +100,12 @@ a {
   }
 }
 
+@media (min-width: 1400px) {
+  .button2 {
+    padding: 1.2vh 20px 1.07vh;
+  }
+}
+
 .button3 {
   padding: 1.8vh 20px 1.7vh;
   // border: 1px solid blue;
@@ -99,6 +119,11 @@ a {
     backdrop-filter: blur(10px);
     border: 1px solid $staminalight1;
     color: $staminalight1;
+  }
+}
+@media (min-width: 1400px) {
+  .button3 {
+    padding: 1.2vh 20px 1.07vh;
   }
 }
 
@@ -189,15 +214,27 @@ a {
 .nav-item-sidebar {
   font-family: "Stamina";
   font-size: calc(
-    32px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    25px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
   );
-  letter-spacing: -0.03em;
+  letter-spacing: -0.04em;
   line-height: 100%;
+}
+
+@media (min-width: 1100px) {
+  .nav-item-sidebar {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav-item-sidebar {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 800px) {
   .nav-item-sidebar {
-    font-size: 24px;
+    font-size: 18px;
     line-height: 130%;
   }
 }
@@ -215,14 +252,26 @@ a {
   position: relative;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1100px) {
   .nav-item-typo {
     font-size: 11px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav-item-typo {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-item-typo {
+    font-size: 10px;
     line-height: 130%;
   }
 
   .mini-nav-item-typo {
-    font-size: 11px;
+    font-size: 10px;
     line-height: 100%;
   }
 }
@@ -241,8 +290,20 @@ a {
   line-height: 150%;
 }
 
-@media (max-width: 800px) {
+@media (min-width: 1100px) {
   .centered-bold-text {
     font-size: 11px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .centered-bold-text {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 800px) {
+  .centered-bold-text {
+    font-size: 10px;
   }
 }

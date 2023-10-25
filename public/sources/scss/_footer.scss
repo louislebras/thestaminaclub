@@ -53,6 +53,17 @@ footer {
   display: none;
 }
 
+@media (min-width: 1250px) {
+  footer {
+    width: 100vw;
+    margin-left: -34vw;
+  }
+
+  .footer-logo {
+    width: calc(100% - 80px);
+  }
+}
+
 @media (max-width: 800px) {
   .footer-logo-mobile {
     display: block;
@@ -78,7 +89,7 @@ footer {
   }
 
   .title-item-footer {
-    font-size: 22px;
+    font-size: 16px !important;
     margin-bottom: 15px;
     text-align: center;
   }

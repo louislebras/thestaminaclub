@@ -23,7 +23,7 @@
   bottom: 0;
   z-index: -10;
   opacity: 0;
-  backdrop-filter: blur(05px);
+  backdrop-filter: blur(15px);
   transition: 0.2s $easeOut;
   cursor: pointer;
 }
@@ -80,10 +80,32 @@
   bottom: 2vh;
 }
 
+@media (min-width: 1100px) {
+  .sidebar {
+    width: 30vw;
+  }
+
+  .monogram-sidebar {
+    width: 60px;
+    bottom: 150px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .sidebar {
+    width: 25vw;
+  }
+
+  .monogram-sidebar {
+    width: 60px;
+    bottom: 150px;
+  }
+}
+
 @media (max-width: 800px) {
   .sidebar {
     width: calc(100% - 40px);
-    height: 75vh;
+    height: 80vh;
   }
 
   .nav-item-sidebar {
@@ -91,6 +113,6 @@
   }
 
   .monogram-sidebar {
-    width: 13%;
+    width: 40px;
   }
 }
