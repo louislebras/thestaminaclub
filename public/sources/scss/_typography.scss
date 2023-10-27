@@ -127,6 +127,27 @@ a {
   }
 }
 
+.button4 {
+  padding: 1.8vh 20px 1.7vh;
+  // border: 1px solid blue;
+  border-radius: 500px;
+  background-color: $staminadark1;
+  color: $staminalight1;
+  border: 1px solid transparent;
+  transition: $short $easeOut;
+  &:hover {
+    backdrop-filter: blur(10px);
+    border: 1px solid $staminadark1;
+    color: $staminadark1;
+    background-color: transparent;
+  }
+}
+@media (min-width: 1400px) {
+  .button4 {
+    padding: 1.2vh 20px 1.07vh;
+  }
+}
+
 .text-small {
   font-family: "Stamina";
   font-size: calc(

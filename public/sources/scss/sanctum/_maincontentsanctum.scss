@@ -23,6 +23,7 @@
   }
 
   .nav-item-typo {
+    line-height: 140%;
     margin-top: 20px;
   }
 
@@ -46,6 +47,10 @@
 .image-last-one {
   width: 100%;
   margin-top: 10vh;
+}
+
+.button4 {
+  margin-top: 5vh;
 }
 
 @media (max-width: 800px) {
@@ -78,7 +83,7 @@
 
 .article-classic-block {
   width: calc(50% - 7.5px);
-  height: 45vh;
+  height: 50vh;
   background-color: $staminalight2;
   border-radius: 6px;
   margin-bottom: 15px;
