@@ -11,14 +11,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: appearLoader 2s ease;
+  animation: appearLoader 3s ease;
   opacity: 0;
   display: flex;
 
   .container-img-loader {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 49%;
     // margin-top: 10px;
     transform: translate(-50%, -50%);
     img {

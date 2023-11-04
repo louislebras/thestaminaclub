@@ -7,8 +7,16 @@
 
   .intro-section-text {
     width: 100%;
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
+    // text-align: center;
+    h3 {
+      position: relative;
+      left: -5px;
+    }
     // border: 1px solid red;
+    p {
+      margin-top: 10px;
+    }
   }
 
   .transition-products-home-big-text {

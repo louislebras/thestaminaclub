@@ -78,12 +78,16 @@
     color: $staminalight1;
     border: 0.5px solid rgba(255, 255, 255, 0.3);
 
-    .text-small {
-      margin-top: 15px;
-    }
-
     .infos-link-block {
       left: 0;
+      span {
+        background-color: $staminalight1 !important;
+        color: $staminadark1 !important;
+      }
+    }
+
+    .text-small {
+      margin-top: 15px;
     }
   }
 }

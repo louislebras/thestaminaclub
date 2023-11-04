@@ -4,6 +4,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: $staminadark3;
+  color: $staminalight1;
 }
 
 main {
@@ -16,6 +18,14 @@ footer {
   margin-left: 0vw;
 }
 
+nav {
+  background: rgba(162, 160, 158, 0.58);
+}
+
+.sidebar {
+  background-color: $staminadark1;
+}
+
 .big-text-classic {
   line-height: 115%;
 }
@@ -25,9 +35,27 @@ footer {
 }
 
 .dark-block {
-  background-color: $staminadark3;
+  background-color: $staminadark1;
 }
 
+.button3 {
+  margin-top: 5vh;
+}
+
+.infos-link-block {
+  span {
+    background-color: $staminadark2;
+    color: $staminalight1;
+  }
+}
+
+.active-item-menu {
+  color: $staminadark1;
+}
+
+.nav-item:hover {
+  color: $staminadark1;
+}
 @media (max-width: 800px) {
   .logo-fixed-header {
     display: none;

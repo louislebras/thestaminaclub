@@ -149,11 +149,13 @@
   flex-direction: column;
   position: relative;
   height: 89vh;
-  padding-top: 0px;
+  padding-top: 25px;
 
   .button3 {
     position: absolute;
     bottom: 40px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
+    animation: 2s linear infinite fadebutton;
   }
 
   .logo-join-club {
@@ -177,7 +179,7 @@
     z-index: 1;
     text-align: center;
     margin-top: 25px;
-    width: 85%;
+    width: 80%;
   }
 
   #mc_embed_signup {
@@ -415,7 +417,7 @@
     width: 80%;
     text-align: center;
     position: relative;
-    z-index: 100;
+    z-index: 10;
   }
 
   .inspi-cover-sanctum {
@@ -429,6 +431,8 @@
   .button3 {
     position: absolute;
     bottom: 40px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
+    animation: 2s linear infinite fadebutton;
   }
 }
 
@@ -487,20 +491,22 @@
   }
 
   .book-cover-vision-classic-block {
-    width: 50%;
+    width: 55%;
     position: relative;
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .button3 {
     position: absolute;
     bottom: 40px;
+    box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
+    animation: 2s linear infinite fadebutton;
   }
 }
 
 @media (min-width: 1100px) {
   .visionbook-container {
-    height: 80vh;
+    height: 85vh;
 
     .book-cover-vision-classic-block {
       width: 45%;
@@ -514,8 +520,8 @@
   .visionbook-container {
     height: 80vh;
     .book-cover-vision-classic-block {
-      margin-top: 60px;
-      width: 48%;
+      margin-top: 50px;
+      width: 45%;
     }
   }
 }

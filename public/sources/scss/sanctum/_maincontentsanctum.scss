@@ -2,9 +2,9 @@
 
 .main-content-sanctum {
   //   border: 1px solid red;
-  width: 60%;
-  margin-left: 20%;
-  margin-top: 20vh;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 20svh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+
   .secondary-title {
     width: 100%;
     text-align: center;
@@ -28,8 +29,12 @@
   }
 
   img {
-    width: 30px;
+    height: 30px;
     margin-top: 0px;
+  }
+
+  .tryptique {
+    height: 50px;
   }
 }
 
@@ -47,10 +52,6 @@
 .image-last-one {
   width: 100%;
   margin-top: 10vh;
-}
-
-.button4 {
-  margin-top: 5vh;
 }
 
 @media (max-width: 800px) {
@@ -84,12 +85,14 @@
 .article-classic-block {
   width: calc(50% - 7.5px);
   height: 50vh;
-  background-color: $staminalight2;
+  background: rgba(17, 39, 43, 0.268);
+  backdrop-filter: blur(15px);
   border-radius: 6px;
   margin-bottom: 15px;
   padding: 20px 25px;
   overflow: hidden;
   position: relative !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
   img {
     width: calc(100% + 50px);
@@ -148,6 +151,7 @@
   margin-bottom: 15px;
   padding: 20px 25px;
   overflow: hidden;
+
   .infos-link-block {
     width: 100%;
     left: 0;
