@@ -41,7 +41,7 @@
 
 .lastone-home-indication {
   position: relative;
-  margin-top: 20vh;
+  // margin-top: 20vh;
   width: 100%;
   img {
     position: absolute;
@@ -52,6 +52,8 @@
 .container-content-lastones {
   width: 100%;
 }
+
+
 
 @media (max-width: 800px) {
   .lastone-container-home {
@@ -67,7 +69,7 @@
 
   .lastone-home-indication {
     width: 85%;
-    margin-top: 15vh;
+    margin-top: 0vh;
     margin-left: 7.5%;
     margin-bottom: 40px;
     img {

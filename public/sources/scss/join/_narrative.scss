@@ -1,0 +1,256 @@
+.narrative {
+  width: 100%;
+  //   background-color: $staminadark3;
+  height: 100%;
+  z-index: 100;
+  position: fixed;
+}
+
+.slide-narrative {
+  position: fixed;
+  //   border: 1px solid red;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $staminadark3;
+}
+
+.header-narrative {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 8vh;
+
+  img {
+    width: 60px;
+    z-index: 100;
+    position: relative;
+  }
+}
+
+.content-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  p {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: "Stamina";
+    font-size: calc(
+      28px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 * 20
+    );
+    letter-spacing: -0.04em;
+    line-height: 130%;
+    font-weight: 300;
+    span {
+      color: #8a8a8a;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .content-slide {
+    p {
+      font-size: 18px;
+      width: 80%;
+      margin-top: 8vh;
+    }
+  }
+}
+
+.container-halo {
+  width: 200px;
+  height: 200px;
+  //   border: 1px solid red;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16vh;
+}
+
+@media (max-width: 800px) {
+  .container-halo {
+    width: 150px;
+    height: 150px;
+    margin-top: 10vh;
+  }
+}
+
+.circle1 {
+  background-color: #e6e6e6;
+  width: 100%;
+  height: 100%;
+  border-radius: 9000px;
+  position: absolute;
+}
+
+.circle2 {
+  background-color: #737373;
+  width: 91%;
+  height: 91%;
+  border-radius: 9000px;
+  position: absolute;
+}
+
+.circle3 {
+  background-color: #afafaf;
+  width: 80%;
+  height: 80%;
+  border-radius: 9000px;
+  position: absolute;
+}
+
+.circle4 {
+  background-color: #ffffff;
+  width: 70%;
+  height: 70%;
+  border-radius: 9000px;
+  position: absolute;
+  animation: haloLum 3s linear infinite;
+  box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2;
+}
+
+@keyframes haloLum {
+  0% {
+    box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2,
+      0px 0px 125px 0px #00ffc2;
+  }
+
+  50% {
+    box-shadow: 0px 0px 125px 0px #00ffc336, 0px 0px 125px 0px #00ffc3;
+  }
+
+  100% {
+    box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2,
+      0px 0px 125px 0px #00ffc2;
+  }
+}
+
+.button-next {
+  position: absolute;
+  bottom: 12vh;
+  left: 50%;
+  background: rgba(232, 228, 223, 0.24);
+  backdrop-filter: blur(29.5px);
+  border-radius: 200px;
+  padding: 7px 8px 7px 8px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  p {
+    padding: 15px 20px 14px 20px;
+    background-color: $staminalight1;
+    color: $staminadark1;
+    border-radius: 200px;
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .button-next {
+    bottom: 9vh;
+  }
+}
+
+.skip-button {
+  background: rgba(232, 228, 223, 0.24);
+  backdrop-filter: blur(29.5px);
+  border-radius: 200px;
+  padding: 17px 18px 16px 18px;
+  width: fit-content;
+  position: absolute;
+  right: 8vw;
+  top: 9vh;
+  cursor: pointer;
+  transition: 0.2s ease;
+
+  &:hover {
+    background-color: $staminalight1;
+    color: $staminadark1;
+  }
+}
+
+@media (max-width: 800px) {
+  .skip-button {
+    position: absolute;
+    left: 50%;
+    bottom: 2.5vh;
+    top: auto;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.slide1 {
+  z-index: 600;
+}
+
+.slide2 {
+  z-index: 500;
+}
+
+.slide3 {
+  z-index: 300;
+}
+
+.slide4 {
+  z-index: 200;
+}
+
+.slide5 {
+  z-index: 100;
+}
+
+.tada {
+  animation: 2s Aurevoir;
+  transition: 0.3s ease;
+  opacity: 0;
+  z-index: -100;
+}
+
+@keyframes Aurevoir {
+  0% {
+    opacity: 1;
+    z-index: 600;
+  }
+
+  50% {
+    opacity: 0;
+    z-index: 600;
+  }
+  91% {
+    z-index: -100;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}
+
+.tada2 {
+  animation: 3s Aurevoir2;
+  transition: 0.3s ease;
+  opacity: 0;
+  z-index: -100;
+}
+
+@keyframes Aurevoir2 {
+  0% {
+    opacity: 1;
+    z-index: 400;
+  }
+
+  50% {
+    opacity: 0;
+    z-index: 400;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -100;
+  }
+}

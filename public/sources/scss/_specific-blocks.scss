@@ -61,7 +61,7 @@
     border-radius: 10px;
   }
 
-  .button2 {
+  .button3 {
     position: absolute;
     z-index: 1;
     bottom: 2vh;
@@ -145,11 +145,15 @@
 .private-letters-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   position: relative;
   height: 89vh;
-  padding-top: 25px;
+  padding-top: 7vh;
+
+  .text-small {
+    font-size: 17px;
+  }
 
   .button3 {
     position: absolute;
@@ -338,7 +342,7 @@
 
 @media (min-width: 1100px) {
   .private-letters-container {
-    height: 83vh;
+    height: 85vh;
 
     #mc_embed_signup_scroll {
       .optionalParent {
@@ -367,7 +371,12 @@
 
 @media (max-width: 800px) {
   .private-letters-container {
-    height: 90vh;
+    height: 94vh;
+    padding-top: 10vh;
+
+    .button3 {
+      bottom: 50px;
+    }
 
     #mc_embed_signup_scroll {
       .optionalParent {
@@ -391,9 +400,13 @@
   justify-content: flex-start;
   flex-direction: column;
   padding-top: 13vh;
-  height: 80vh;
+  height: 85vh;
   position: relative;
   overflow: hidden;
+
+  .text-small {
+    font-size: 17px;
+  }
 
   .bg-private-letters {
     z-index: 0;
@@ -423,7 +436,7 @@
   .inspi-cover-sanctum {
     position: absolute;
     left: 72%;
-    top: 82%;
+    top: 84%;
     transform: translate(-50%, -50%);
     height: 40vh;
   }
@@ -438,7 +451,7 @@
 
 @media (min-width: 1100px) {
   .sanctum-container {
-    height: 80vh;
+    height: 85vh;
   }
 }
 
@@ -450,9 +463,9 @@
 
 @media (max-width: 800px) {
   .sanctum-container {
-    height: 85vh;
+    height: 89vh;
     .button3 {
-      bottom: 30px;
+      bottom: 50px;
     }
   }
 }
@@ -466,6 +479,10 @@
   height: 85vh;
   position: relative;
   overflow: hidden;
+
+  .text-small {
+    font-size: 17px;
+  }
 
   .bg-private-letters {
     z-index: 0;
@@ -488,12 +505,16 @@
     margin-top: 15px;
     width: 70%;
     text-align: center;
+    z-index: 10;
   }
 
   .book-cover-vision-classic-block {
-    width: 55%;
-    position: relative;
-    margin-top: 30px;
+    height: 30vh;
+    width: auto;
+    // object-fit: cover;
+    position: absolute;
+    bottom: 80px;
+    z-index: 1;
   }
 
   .button3 {
@@ -509,9 +530,11 @@
     height: 85vh;
 
     .book-cover-vision-classic-block {
-      width: 45%;
-      position: relative;
-      margin-top: 30px;
+      height: 32vh;
+      width: auto;
+      // object-fit: cover;
+      position: absolute;
+      bottom: 80px;
     }
   }
 }
@@ -520,22 +543,33 @@
   .visionbook-container {
     height: 80vh;
     .book-cover-vision-classic-block {
-      margin-top: 50px;
-      width: 45%;
+      // margin-top: 50px;
+      height: 32vh;
+      width: auto;
+      // object-fit: cover;
+      position: absolute;
+      bottom: 80px;
     }
   }
 }
 
 @media (max-width: 800px) {
   .visionbook-container {
-    .book-cover-vision-classic-block {
-      width: 52%;
+    height: 88vh;
 
-      margin-top: 20px;
+    .description-book-vision {
+      width: 75%;
+    }
+    .book-cover-vision-classic-block {
+      height: 32vh;
+      width: auto;
+      // object-fit: cover;
+      position: absolute;
+      bottom: 80px;
     }
 
     .button3 {
-      bottom: 30px;
+      bottom: 50px;
     }
   }
 }

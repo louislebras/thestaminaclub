@@ -1,0 +1,246 @@
+.heading-join-section {
+  background-color: $staminadark2;
+  width: 100%;
+  height: 100vh;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+
+  .logo-join {
+    height: 45px;
+    position: relative;
+    width: auto;
+    margin-left: 45px;
+    margin-top: 45px;
+  }
+
+  .cover-heading-join {
+    height: 101vh;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    right: 0vw;
+  }
+}
+
+// @media (min-width: 1400px) {
+//   .heading-join-section {
+//     img {
+//       right: 10vw;
+//     }
+//   }
+// }
+
+@media (max-width: 800px) {
+  .heading-join-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    height: fit-content;
+
+    .logo-join {
+      margin-left: 20px;
+      margin-top: 20px;
+      height: 40px;
+    }
+    .cover-heading-join {
+      position: relative;
+      height: 66vh;
+      width: 120%;
+      margin-top: -7vh;
+      left: -10%;
+      object-fit: cover;
+    }
+  }
+}
+
+.description-join-head-part {
+  //   width: 45vw;
+  max-width: 500px;
+  margin-left: 45px;
+  margin-top: 45px;
+  margin-top: 11vh;
+  z-index: 1;
+  position: relative;
+
+  .text-small {
+    margin-top: 30px;
+
+    width: 35vw;
+    max-width: 500px;
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    line-height: 145%;
+  }
+
+  .badge-club-text {
+    position: relative;
+    width: fit-content;
+    padding: 9px 10px 8px;
+    border: 1px solid $staminalight1;
+    border-radius: 300px;
+    margin-top: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      background-color: $staminalight1;
+      color: $staminadark1;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .description-join-head-part {
+    width: 100%;
+    max-width: none;
+    // border: 1px solid red;
+    margin-left: 0;
+    padding: 20px;
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+
+    .main-title {
+      font-size: 36px;
+      width: 100%;
+      //   text-align: center;
+    }
+
+    .text-small {
+      width: 90%;
+      max-width: none;
+    }
+
+    .badge-club-text {
+      margin-top: 20px;
+    }
+  }
+}
+
+.fill-to-join-component {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 104px;
+  background: rgba(127, 130, 130, 0.29);
+  padding: 5px 6px 5px 25px;
+  align-items: center;
+  margin-top: 15vh;
+  p {
+    width: fit-content;
+    position: relative;
+    top: 0.5px;
+  }
+}
+
+#mc_embed_signup {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 64px;
+  background: #0c1e21;
+  padding: 5px 6px 5px 25px;
+  //   width: 65%;
+}
+
+.div-inputs {
+  display: flex;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  input {
+    // height: 20px;
+    outline: none;
+    border: none !important;
+    position: relative;
+    resize: none;
+    font-family: "Stamina Bold";
+    font-size: 12px;
+    text-transform: uppercase;
+
+    &::placeholder {
+      color: rgba(201, 201, 201, 0.472);
+    }
+  }
+
+  #mce-FNAME {
+    width: 90px;
+    color: $staminalight1;
+  }
+
+  #mce-EMAIL {
+    width: 150px;
+    color: $staminalight1;
+  }
+
+  #mc-embedded-subscribe {
+    background-color: $staminalight1;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    font-size: 22px;
+    font-weight: 200;
+    box-shadow: 0px 0px 30px 0px rgba(0, 255, 194, 0.8);
+    transition: 0.3s ease-out;
+    // transform: rotate(-45deg);
+    &:hover {
+      box-shadow: 0px 0px 50px 0px rgba(0, 255, 194);
+      transition: 0.3s ease;
+    }
+  }
+}
+
+.nospammessage {
+  width: 100%;
+  text-align: right;
+  margin-top: 15px;
+}
+
+@media (max-width: 800px) {
+  .fill-to-join-component {
+    margin-top: 30px;
+    width: 100%;
+    padding: 5px 6px 5px 6px;
+
+    p {
+      display: none;
+    }
+  }
+
+  #mc_embed_signup {
+    width: 100%;
+    padding: 5px 6px 5px 20px;
+  }
+
+  #mc-embedded-subscribe-form {
+    width: 100%;
+  }
+
+  #mc_embed_signup_scroll {
+    width: 100%;
+    position: relative;
+    // border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    #mc-embedded-subscribe {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-color: $staminalight1;
+      width: 35px;
+      height: 35px;
+
+      color: black;
+    }
+  }
+}

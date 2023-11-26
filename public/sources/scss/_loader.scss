@@ -21,6 +21,16 @@
     top: 49%;
     // margin-top: 10px;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      margin-top: 30px;
+      font-size: 10px;
+      color: #e8e4df;
+    }
     img {
       z-index: 200 !important;
 
@@ -28,7 +38,7 @@
       transition: 0.3s;
       position: relative;
       opacity: 1;
-      width: 12vw;
+      height: 10vh;
     }
   }
 
@@ -76,10 +86,10 @@
   .loader {
     .container-img-loader {
       top: 43vh;
-      left: 50%;
-      img {
-        width: 25vw;
-      }
+      left: 51%;
+      // img {
+      //   height: 90px;
+      // }
     }
   }
 }
