@@ -85,7 +85,8 @@
 
 .subtopics-card {
   width: fit-content;
-  background-color: $staminadark2;
+  // background-color: $staminadark2;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 1.45vh 20px 1.3vh;
   border-radius: 300px;
 }

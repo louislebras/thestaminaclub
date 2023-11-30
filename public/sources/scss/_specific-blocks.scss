@@ -61,7 +61,7 @@
     border-radius: 10px;
   }
 
-  .button3 {
+  .button2 {
     position: absolute;
     z-index: 1;
     bottom: 2vh;
@@ -148,7 +148,7 @@
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
-  height: 89vh;
+  height: fit-content;
   padding-top: 7vh;
 
   .text-small {
@@ -158,8 +158,8 @@
   .button3 {
     position: absolute;
     bottom: 40px;
-    box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
-    animation: 2s linear infinite fadebutton;
+    // box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
+    // animation: 2s linear infinite fadebutton;
   }
 
   .logo-join-club {
@@ -186,210 +186,322 @@
     width: 80%;
   }
 
-  #mc_embed_signup {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: auto;
-    margin-top: 30px;
+  // #mc_embed_signup {
+  //   position: relative;
+  //   display: flex;
+  //   align-items: center;
+  //   justify-content: center;
+  //   width: auto;
+  //   margin-top: 30px;
+  //   width: 80%;
+  // }
+
+  // #mc_embed_signup_scroll {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 100%;
+
+  //   font-family: "Stamina Bold";
+  //   padding: 0px 0px;
+  //   // border: 0.5px solid $staminalight1;
+  //   background: rgba(203, 197, 188, 0.197);
+  //   backdrop-filter: blur(12.5px);
+
+  //   height: 43px;
+  //   border-radius: 50px;
+  //   padding: 4px 5px 4px 15px;
+
+  //   // GENERAL INPUT
+
+  //   input {
+  //     outline: none;
+  //     // background-color: #d3ccbf;
+  //     border: none !important;
+  //     // border-radius: 50px;
+  //     position: relative;
+  //     // top: -1px;
+  //     width: 60%;
+  //     height: 100%;
+  //     font-size: 12px;
+  //     position: relative;
+  //     top: -2px;
+  //     left: 8px;
+  //     resize: none;
+  //     &::placeholder {
+  //       color: rgba(201, 201, 201, 0.472);
+  //     }
+  //   }
+
+  //   .mc-field-group {
+  //     width: 75%;
+  //     height: 100%;
+  //     // border: 1px solid green;
+  //     height: fit-content;
+  //     input {
+  //       width: 100%;
+  //       height: 100%;
+  //       color: $staminalight1;
+  //     }
+
+  //     #mce-EMAIL {
+  //       position: relative;
+  //       left: -25px;
+  //       // width: 60%;
+  //     }
+  //   }
+
+  //   .mce-responses,
+  //   #mce-EMAIL-HELPERTEXT {
+  //     width: 0;
+  //   }
+
+  //   .optionalParent {
+  //     // border: 1px solid blue;
+  //     display: flex;
+  //     justify-content: flex-end;
+  //     width: 40%;
+  //     background-color: $staminalight1;
+
+  //     height: 100%;
+  //     display: flex;
+  //     align-items: center;
+  //     justify-content: center;
+  //     margin-left: 1px;
+  //     border-radius: 50px;
+  //     border: 1px solid transparent;
+  //     color: $staminadark1;
+  //     transition: 0.3s ease;
+  //     cursor: pointer;
+
+  //     &:hover {
+  //       background-color: transparent;
+  //       border: 1px solid $staminalight1;
+  //       transition: 0.3s ease;
+  //       input {
+  //         color: $staminalight1;
+  //       }
+  //     }
+
+  //     img {
+  //       position: relative;
+  //       left: 15px;
+  //       height: 50%;
+  //     }
+
+  //     @media (max-width: 800px) {
+  //       img {
+  //         left: 10px;
+  //       }
+  //     }
+
+  //     .clear,
+  //     .foot {
+  //       width: 100%;
+  //       //   height: 100%;
+  //     }
+  //     input {
+  //       font-family: "Stamina Bold";
+
+  //       width: 100%;
+  //       text-align: center;
+  //       position: relative;
+  //       top: -2px;
+  //       left: 1px;
+  //       // font-weight: 00;
+  //       // letter-spacing: -0.04em;
+  //       // color: #05272e;
+  //       border-top-right-radius: 5px;
+  //       border-bottom-right-radius: 5px;
+  //       height: 100%;
+  //       // font-size: calc(12px);
+
+  //       text-align: center;
+  //       text-transform: uppercase;
+  //       font-size: calc(
+  //         17px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 *
+  //           20
+  //       );
+  //       font-family: "Stamina Bold";
+  //       text-transform: uppercase;
+  //       letter-spacing: 0.03em;
+  //       line-height: 100%;
+  //       position: relative;
+  //     }
+  //   }
+  // }
+
+  .fill-to-join-component {
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 104px;
+    background: rgba(127, 130, 130, 0.29);
+    padding: 5px 6px 5px 6px;
+    align-items: center;
+    margin-top: 4vh;
+    // border: 10px solid red !important;
+    position: relative;
+    p {
+      width: fit-content;
+      position: relative;
+      top: 0.5px;
+    }
+  }
+
+  #mc_embed_signup {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 64px;
+    background: #0c1e21;
+    padding: 5px 6px 5px 25px;
+    width: 100%;
+    //   width: 65%;
+  }
+
+  .div-inputs {
+    display: flex;
+  }
+
+  form {
+    width: 100%;
   }
 
   #mc_embed_signup_scroll {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
+    // border: 1px solid red;
 
-    font-family: "Stamina Bold";
-    padding: 0px 0px;
-    // border: 0.5px solid $staminalight1;
-    background: rgba(203, 197, 188, 0.197);
-    backdrop-filter: blur(12.5px);
-
-    height: 43px;
-    border-radius: 50px;
-    padding: 4px 5px 4px 15px;
-
-    // GENERAL INPUT
+    #mc-embedded-subscribe-form {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+    }
 
     input {
+      // height: 20px;
       outline: none;
-      // background-color: #d3ccbf;
       border: none !important;
-      // border-radius: 50px;
       position: relative;
-      // top: -1px;
-      width: 60%;
-      height: 100%;
-      font-size: 12px;
-      position: relative;
-      top: -2px;
-      left: 8px;
       resize: none;
+      font-family: "Stamina Bold";
+      font-size: 12px;
+      text-transform: uppercase;
+
       &::placeholder {
         color: rgba(201, 201, 201, 0.472);
       }
     }
 
-    .mc-field-group {
-      width: 75%;
-      height: 100%;
-      // border: 1px solid green;
-      height: fit-content;
-      input {
-        width: 100%;
-        height: 100%;
-        color: $staminalight1;
-      }
-
-      #mce-EMAIL {
-        position: relative;
-        left: -25px;
-        // width: 60%;
-      }
+    #mce-FNAME {
+      width: 90px;
+      color: $staminalight1;
     }
 
-    .mce-responses,
-    #mce-EMAIL-HELPERTEXT {
-      width: 0;
+    #mce-EMAIL {
+      width: 150px;
+      color: $staminalight1;
     }
 
-    .optionalParent {
-      // border: 1px solid blue;
-      display: flex;
-      justify-content: flex-end;
-      width: 40%;
+    #mc-embedded-subscribe {
       background-color: $staminalight1;
-
-      height: 100%;
+      width: 30px;
+      height: 30px;
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-left: 1px;
-      border-radius: 50px;
-      border: 1px solid transparent;
-      color: $staminadark1;
-      transition: 0.3s ease;
-      cursor: pointer;
-
+      border-radius: 100px;
+      font-size: 22px;
+      font-weight: 200;
+      box-shadow: 0px 0px 30px 0px rgba(0, 255, 194, 0.8);
+      transition: 0.3s ease-out;
+      // transform: rotate(-45deg);
       &:hover {
-        background-color: transparent;
-        border: 1px solid $staminalight1;
+        box-shadow: 0px 0px 50px 0px rgba(0, 255, 194);
         transition: 0.3s ease;
-        input {
-          color: $staminalight1;
-        }
-      }
-
-      img {
-        position: relative;
-        left: 15px;
-        height: 50%;
-      }
-
-      @media (max-width: 800px) {
-        img {
-          left: 10px;
-        }
-      }
-
-      .clear,
-      .foot {
-        width: 100%;
-        //   height: 100%;
-      }
-      input {
-        font-family: "Stamina Bold";
-
-        width: 100%;
-        text-align: center;
-        position: relative;
-        top: -2px;
-        left: 1px;
-        // font-weight: 00;
-        // letter-spacing: -0.04em;
-        // color: #05272e;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-        height: 100%;
-        // font-size: calc(12px);
-
-        text-align: center;
-        text-transform: uppercase;
-        font-size: calc(
-          17px + (100vw - ((100vw - 850px) / 6 + 15px) * 2 - 1600px) * 0.0005 *
-            20
-        );
-        font-family: "Stamina Bold";
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-        line-height: 100%;
-        position: relative;
       }
     }
+  }
+
+  .nospammessage {
+    width: 100%;
+    text-align: right;
+    margin-top: 15px;
   }
 
   .letter-image-join {
-    height: 27vh;
+    height: 30vh;
     position: relative;
     margin-top: 15px;
     margin-bottom: 20px;
+    margin-bottom: 10vh;
     filter: brightness(1.5);
-  }
-}
-
-@media (min-width: 1100px) {
-  .private-letters-container {
-    height: 85vh;
-
-    #mc_embed_signup_scroll {
-      .optionalParent {
-        input {
-          font-size: 11px;
-          color: $staminadark1;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  .private-letters-container {
-    height: 80vh;
-    #mc_embed_signup_scroll {
-      .optionalParent {
-        input {
-          font-size: 12px;
-          color: $staminadark1;
-        }
-      }
-    }
   }
 }
 
 @media (max-width: 800px) {
   .private-letters-container {
-    height: 94vh;
+    // height: 94vh;
     padding-top: 10vh;
+
+    .fill-to-join-component {
+      margin-top: 30px;
+      width: 85%;
+      padding: 5px 6px 5px 6px;
+
+      p {
+        display: none;
+      }
+    }
+
+    #mc_embed_signup {
+      width: 100%;
+      padding: 5px 6px 5px 20px;
+    }
+
+    #mc-embedded-subscribe-form {
+      width: 100%;
+    }
+
+    #mc_embed_signup_scroll {
+      width: 100%;
+      position: relative;
+      // border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+      height: 35px;
+      #mc-embedded-subscribe {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background-color: $staminalight1;
+        width: 35px;
+        height: 35px;
+
+        color: black;
+      }
+    }
 
     .button3 {
       bottom: 50px;
     }
 
-    #mc_embed_signup_scroll {
-      .optionalParent {
-        input {
-          font-size: 10px;
-          color: $staminadark1;
-        }
-      }
-    }
+    // #mc_embed_signup_scroll {
+    //   .optionalParent {
+    //     input {
+    //       font-size: 10px;
+    //       color: $staminadark1;
+    //     }
+    //   }
+    // }
 
     .letter-image-join {
-      height: 25vh;
-      margin-top: 20px;
+      // height: 25vh;
+      // margin-top: 20px;
+      margin-bottom: 12vh;
     }
   }
 }
@@ -463,7 +575,7 @@
 
 @media (max-width: 800px) {
   .sanctum-container {
-    height: 89vh;
+    height: 92vh;
     .button3 {
       bottom: 50px;
     }
@@ -476,7 +588,7 @@
   justify-content: flex-start;
   flex-direction: column;
   padding-top: 14vh;
-  height: 85vh;
+  height: fit-content;
   position: relative;
   overflow: hidden;
 
@@ -503,69 +615,44 @@
   .description-book-vision {
     position: relative;
     margin-top: 15px;
-    width: 70%;
+    width: 77%;
     text-align: center;
     z-index: 10;
   }
 
   .book-cover-vision-classic-block {
-    height: 30vh;
+    height: 35vh;
     width: auto;
+    margin-top: 5vh;
     // object-fit: cover;
-    position: absolute;
-    bottom: 80px;
+    margin-bottom: 7vh;
+    position: relative;
+    // bottom: 80px;
     z-index: 1;
   }
 
   .button3 {
     position: absolute;
     bottom: 40px;
-    box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
-    animation: 2s linear infinite fadebutton;
-  }
-}
-
-@media (min-width: 1100px) {
-  .visionbook-container {
-    height: 85vh;
-
-    .book-cover-vision-classic-block {
-      height: 32vh;
-      width: auto;
-      // object-fit: cover;
-      position: absolute;
-      bottom: 80px;
-    }
-  }
-}
-
-@media (min-width: 1400px) {
-  .visionbook-container {
-    height: 80vh;
-    .book-cover-vision-classic-block {
-      // margin-top: 50px;
-      height: 32vh;
-      width: auto;
-      // object-fit: cover;
-      position: absolute;
-      bottom: 80px;
-    }
+    // box-shadow: 0px 0px 35px 0px rgba(0, 255, 194, 0.5);
+    // animation: 2s linear infinite fadebutton;
   }
 }
 
 @media (max-width: 800px) {
   .visionbook-container {
-    height: 88vh;
+    // height: 88vh;
 
     .description-book-vision {
-      width: 75%;
+      width: 80%;
     }
     .book-cover-vision-classic-block {
-      height: 32vh;
+      height: 40vh;
       width: auto;
+      margin-bottom: 10vh;
       // object-fit: cover;
-      position: absolute;
-      bottom: 80px;
+      // position: absolute;
+      // bottom: 80px;
     }
 
     .button3 {
