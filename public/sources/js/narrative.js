@@ -30,13 +30,18 @@ var slideFive = document.querySelector(".slide5");
 var nextFive = document.querySelector(".next5");
 var boxNarrative = document.querySelector(".narrative");
 
-nextFive.onclick = function () {
+var theBody = document.querySelector(".html");
 
+nextFive.onclick = function () {
   boxNarrative.classList.add("tada2");
+  theBody.classList.add("removeFixedScroll");
 };
 
 var skipButton = document.querySelector(".skip-button");
 
+var theBody = document.querySelector(".html");
+
 skipButton.onclick = function () {
   boxNarrative.classList.add("tada2");
+  theBody.classList.add("removeFixedScroll");
 };

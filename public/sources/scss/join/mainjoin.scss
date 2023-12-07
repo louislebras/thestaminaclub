@@ -9,6 +9,14 @@ body {
   color: $staminalight1;
 }
 
+.html {
+  overflow: hidden;
+}
+
+.removeFixedScroll {
+  overflow: scroll;
+}
+
 .secondary-title {
   font-family: "Stamina";
   font-size: calc(

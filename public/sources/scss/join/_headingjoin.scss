@@ -57,17 +57,16 @@
 
 .description-join-head-part {
   //   width: 45vw;
-  max-width: 500px;
+  max-width: 550px;
   margin-left: 45px;
   margin-top: 45px;
   margin-top: 11vh;
   z-index: 1;
   position: relative;
 
-  .text-small {
+  .text-classic {
     margin-top: 30px;
-
-    width: 35vw;
+    width: 33vw;
     max-width: 500px;
     font-weight: 200;
     letter-spacing: -0.04em;
@@ -109,8 +108,8 @@
       //   text-align: center;
     }
 
-    .text-small {
-      width: 90%;
+    .text-classic {
+      width: 100%;
       max-width: none;
     }
 
@@ -128,7 +127,7 @@
   background: rgba(127, 130, 130, 0.29);
   padding: 5px 6px 5px 25px;
   align-items: center;
-  margin-top: 18vh;
+  margin-top: 15vh;
   p {
     width: fit-content;
     position: relative;

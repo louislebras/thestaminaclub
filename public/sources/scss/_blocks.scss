@@ -99,6 +99,10 @@
   border-radius: 10px;
   margin-bottom: 10px;
   overflow: hidden;
+
+  .text-small {
+    line-height: 150%;
+  }
   .inside-mini-block {
     padding: 25px 25px;
     .text-small {

@@ -2,6 +2,175 @@
   "./main-container-content-home";
 
 .transition-merch {
-  margin-top: 0vh;
+  margin-top: 15vh;
   margin-bottom: 15vh;
+}
+
+.container-halo-home {
+  // border: 1px solid red;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5vh;
+  margin-top: -5vh;
+  .container-halo {
+    width: 200px;
+    height: 200px;
+    //   border: 1px solid red;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-top: 16vh;
+  }
+
+  @media (max-width: 800px) {
+    .container-halo {
+      width: 150px;
+      height: 150px;
+      margin-top: 0vh;
+    }
+  }
+
+  .circle1 {
+    background-color: #e6e6e6;
+    width: 100%;
+    height: 100%;
+    border-radius: 9000px;
+    position: absolute;
+  }
+
+  .circle2 {
+    background-color: #737373;
+    width: 91%;
+    height: 91%;
+    border-radius: 9000px;
+    position: absolute;
+  }
+
+  .circle3 {
+    background-color: #afafaf;
+    width: 80%;
+    height: 80%;
+    border-radius: 9000px;
+    position: absolute;
+  }
+
+  .circle4 {
+    background-color: #ffffff;
+    width: 70%;
+    height: 70%;
+    border-radius: 9000px;
+    position: absolute;
+    animation: haloLum 2.5s linear infinite;
+    box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2;
+  }
+
+  @keyframes haloLum {
+    0% {
+      box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2,
+        0px 0px 125px 0px #00ffc2;
+    }
+
+    50% {
+      box-shadow: 0px 0px 125px 0px #00ffc336, 0px 0px 125px 0px #00ffc3b1;
+    }
+
+    100% {
+      box-shadow: 0px 0px 125px 0px #00ffc2, 0px 0px 125px 0px #00ffc2,
+        0px 0px 125px 0px #00ffc2;
+    }
+  }
+}
+
+.container-whoareyou {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 4vh;
+}
+
+.double-card-whoareyou {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-whoareyou {
+  width: calc(50% - 7.5px);
+  height: auto;
+  background-color: $staminalight2;
+  border-radius: 10px;
+  // padding: 10px;
+  display: flex;
+}
+
+.single-card-whoareyou {
+  width: 100%;
+  height: auto;
+  background-color: $staminalight2;
+  border-radius: 10px;
+  margin-top: 15px;
+  // padding: 10px;
+  display: flex;
+  .inner-card {
+    img {
+      width: auto;
+      height: 28vh;
+    }
+  }
+}
+
+.inner-card {
+  background-color: $staminalight2;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  img {
+    width: 65%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    mix-blend-mode: difference;
+  }
+
+  p {
+    color: $staminadark1;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 150%;
+    font-size: 11px;
+  }
+
+  .button2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card-whoareyou {
+    width: calc(50% - 5px);
+    height: auto;
+    img {
+      margin-bottom: 20px;
+    }
+  }
+
+  .single-card-whoareyou {
+    margin-top: 10px;
+    height: auto;
+    img {
+      margin-bottom: 20px;
+    }
+  }
 }

@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="./public/sources/css/home/main-home.css">
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -35,52 +39,29 @@
     <a href="./" class="logo-fixed-header">
         <img src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
     </a>
-    <div class="sidebar">
-        <div class="close-sidebar nav-item-typo">
-            ✦ Fermer le menu ✦
-        </div>
-
-        <!-- <p class="nav-item-typo indication-sidebar-txt">All you need<br>
-            for the rest of your life
-        </p> -->
-
-        <div class="nav-menu-sidebar">
-
-            <a class="nav-item-sidebar" href="">Le Club</a>
-            <a class="nav-item-sidebar" href="">La Vision du Club</a>
-
-            <a class="nav-item-sidebar" href="">Sanctum : Plateforme de Stratégie
-            </a>
-            <a class="nav-item-sidebar" href="">Vision : Le Guide</a>
-            <a class="nav-item-sidebar" href="">Les Lettres Privées </a>
-
-            <a class="nav-item-sidebar" href="">Coaching Stratégique 1:1</a>
-            <a class="nav-item-sidebar" href="">Business Consulting Services</a>
-
-            <a class="nav-item-sidebar" href="">Collection Privée</a>
-
-            <a class="nav-item-sidebar" href="">On se rencontre ?</a>
-        </div>
-
-        <img class="monogram-sidebar" src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
-    </div>
+    <div id="sidebar"></div>
 
     <main>
 
         <section class="heading-home">
             <img class="logo-home-heading" src="./public/content/brand-assets/logo-staminaclub-black.svg" alt="">
 
-            <p class="centered-bold-text description-heading-home-1">Club privé de stratèges.
-                <br> La seule et unique obligation de l'Homme <br> est de créer sa propre légende. <br>
+            <p class="centered-bold-text description-heading-home-1">Club privé de stratègie. <br>
+                Clés et secrets de grands artistes, <br>
+                entrepreneurs et sociétés du Fortune 500.
+                <!-- <br> -->
+                <!-- Brand, Marketing, Growth, Acquisition, Experience.<br> -->
 
-                Bienvenue au Stamina Club®. <br>
+
+                <br>
 
             </p>
             <audio id="audio" loop src="./public/content/sounds/sounds-audio-waves.mp3"></audio>
 
             <img id="play" class="icon-sound-stamina" src="./public/content/svg-assets/button-sound-stamina.svg" alt="">
 
-            <p class="centered-bold-text description-heading-home-2">Là d’où viennent ceux qui ont le choix.
+            <p class="centered-bold-text description-heading-home-2">
+                Il est temps de laisser votre trace.
             </p>
 
             <video class="video-heading-home" autoplay muted loop playsinline
@@ -97,35 +78,47 @@
 
                     De franchir une <span class="italic">nouvelle</span> étape. <br>
                     De laisser une trace. Une empreinte. <br>
-                    De créer quelque chose de singulier. <br>
-                    De développer votre plein potentiel. <br>
+                    De créer quelque chose d'unique. <br>
+                    De développer votre singularité. <br>
 
 
-                    D'Accomplir votre <span class="italic">Vision</span>. <br>
+                    D'Accomplir votre <span class="italic"> votre Raison d'Être</span>. <br>
+                    D'Accomplir votre <span class="italic">Vision.</span> <br>
                     <br>
-                    Pas de déserteurs face au destin. <br>
-                    On naît pour s'accomplir. <br>
-                    Rien d'autre. <br> <br>
-                    Bienvenue au Stamina Club™. <br> Le seul
+
+
+                    Ambitieux, Artistes, Entrepreneurs, <br>
+                    Marques, Entreprises, Organisations,<br> <br>
+
+                    <span class="italic">Bienvenue au Stamina Club™.</span> <br> Le seul
                     endroit
                     sur Terre, <br>
                     Où vous trouverez toutes les clés, <br> les savoirs et les ressources pour : <br> <br>
-                    • Développer votre vision. <br>
+                    • Développer votre <span class="italic">vision</span>. <br>
                     • Forger vos propres stratégies <br>
                     • Créer une marque d'exception <br>
 
                     <br>
-                    L'Art de la Stratégie. <br>
-                    Au sein d'un éminent lieu d'excellence. <br>
-                    Stratégie, Branding, Vision.
-                    <br><br>
+                    <span class="italic">
+                        Grâce à L'Art de la Stratégie : <br> </span>
+                    <!-- Au sein d'un éminent lieu d'excellence. <br> -->
 
+                    Brand. Direction Artistique. Acquisition. <br>Marketing. Experience. Growth.
+
+                    <br> <br>
+
+                    <span class="italic">Et de La Planification : <br> </span>
+                    Discipline. Persévérance. Réussite. <br> Art de vivre. Business.
+                    Self-care. <br> <br>
 
                     <span class="italic">Le Stamina Club™ :</span> <br> Une boussole. Un guide. <br> Un conseiller. Un
                     instigateur. <br> <br>
 
-                    <span class="italic">Discipline. Persévérance. Réussite. <br> Art de vivre. Business.
-                        Self-care.</span>
+
+
+                    Pas de déserteurs face au destin. <br>
+                    On naît pour s'accomplir. <br>
+                    Rien d'autre.
 
 
 
@@ -155,54 +148,95 @@
 
 
 
-            <div class="main-spacer"></div>
+            <div class="medium-spacer"></div>
 
-
+            <!-- <div class="container-halo-home">
+                <div class="container-halo">
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                    <div class="circle3"></div>
+                    <div class="circle4"></div>
+                </div>
+            </div> -->
 
             <!--  Title MVP -->
-            <!-- <div class="intro-section-text">
-                <h3 style="text-align: center;" class="main-title">BIENVENUE <span class="italic">au</span> <br>
-                    STAMINA CLUB™ <br>
+            <div class="intro-section-text">
+                <h3 style="text-align: center;" class="main-title">
+                    <!-- Enchantée, je suis <br>
+                    <span class="italic">l'intelligence de stamina</span>, <br>
+                    Et vous,  -->
+                    <span class="italic">Bonjour</span>, <br>
+                    Qui êtes vous ?
                 </h3>
-                <img style="height: 35px; margin-bottom: 10vh; margin-top: 10px;"
-                    src="./public/content/brand-assets/monogram-staminaclub-dark.svg" alt="">
-                <p class="big-text-classic">Découvrez S<span class="italic">A</span>NCTUM™, le lieu <br> où vous
-                    trouverez
-                    les fondamentaux pour
-                    développer
-                    votre vision.</p> <br>
+            </div>
 
 
-            </div> -->
+            <div class="container-whoareyou">
+                <div class="double-card-whoareyou">
+                    <a class="card-whoareyou">
+                        <div class="inner-card">
+                            <p class="nav-item-typo">
+                                un Ambitieux <br>
+                                en création <br>
+                                de sa quête
+                            </p>
 
-
-
-
-
-            <!-- <div class="lastone-home-indication">
-                <img src="./public/content/brand-assets/lastones-indication-staminaclub.svg" alt="">
-            </div> -->
-            <!--  UTOPIA COLLECTION / MERCH -->
-            <!-- <div class="content-block-classic little-block-content light-block home-private-collection">
-                <div class="infos-link-block infos-link-block-top">
-                    <a class="nav-item-typo" href="">Stamina Private Collection</a>
-                    <a class="nav-item-typo" href="">↗︎</a>
+                            <img src="./public/content/svg-assets/ambitious-engravement-staminaclub.svg" alt="">
+                            <div class="button2 nav-item-typo">
+                                Choisir
+                            </div>
+                        </div>
+                    </a>
+                    <a class="card-whoareyou">
+                        <div class="inner-card">
+                            <p class="nav-item-typo">
+                                Créateur <br>
+                                Artiste <br>
+                                Entrepreneur
+                            </p>
+                            <img src="./public/content/svg-assets/creator-artist-entrepreneur-engravement-staminaclub.svg"
+                                alt="">
+                            <div class="button2 nav-item-typo">
+                                Choisir
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <img src="./public/content/medias/test-model.png" alt="">
-                <a href="" class="button3 nav-item-typo">Découvrir maintenant</a>
-            </div> -->
+                <a class="single-card-whoareyou">
+                    <div class="inner-card">
+                        <p class="nav-item-typo">
+                            Une Marque <br>
+                            Une Entreprise <br>
+                            Une Organisation
+                        </p>
+                        <img src="./public/content/svg-assets/brand-company-organisation-engravement-staminaclub.svg"
+                            alt="">
+                        <div class="button2 nav-item-typo">
+                            Choisir
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+
 
             <div class="centered-bold-text transition-merch">
-                <p>le savoir est un outil précieux <br>
-                    découvrez toutes nos ressources <br>
+                <p>la conscience et le savoir <br>
+                    sont de précieuces armes et outils <br>
                     faites en bon usage</p>
                 <img style="height: 35px; margin-top: 15px;"
                     src="./public/content/brand-assets/monogram-staminaclub-dark.svg" alt="">
             </div>
 
+            <div class="lastone-home-indication">
+                <img src="./public/content/brand-assets/lastones-indication-staminaclub.svg" alt="">
+            </div>
+
+
             <!--  MVP / Livre Vision -->
-            <div class="visionbook-container content-block-classic dark-block">
-                <!-- <img class="bg-private-letters" src="./public/content/svg-assets/background-private-letters.svg" alt=""> -->
+            <div class="visionbook-container content-block-classic light-block">
+
                 <div class="infos-link-block infos-link-block-top">
                     <a class="nav-item-typo" href="">Un Ouvrage Intemporel</a>
                     <a class="nav-item-typo" href=""> Livre "Vision"</a>
@@ -212,14 +246,18 @@
                     src="./public/content/brand-assets/logo-visionbook-staminaclub.svg" alt="">
 
                 <p class="description-book-vision text-small">
-                    L’Ouvrage pour Concevoir votre Propre Légende. <br>
+                    L’Ouvrage pour Laisser votre Trace dans l'Histoire. <br>
                     Un véritable <span class="italic">guide</span> pour
                     développer, planifier
                     et accomplir votre vision. Stratégies à succès,
                     Méthodes et
                     Grands Principes pour vous
-                    orienter tout au long de votre quête et projet. <span class="italic">Une Boussole et Almanach
-                        intemporel à avoir près de
+                    orienter tout au long de votre quête et projet.
+                    <br> <br>
+
+                    <span class="italic">Une Boussole et
+                        Almanach
+                        intemporel <br> à avoir près de
                         soi à chaque instant.</span>
 
                 </p>
@@ -233,7 +271,7 @@
 
             <!-- MVP / Sanctum -->
             <div class="sanctum-container content-block-classic dark-block">
-                <!-- <img class="bg-private-letters" src="./public/content/svg-assets/background-private-letters.svg" alt=""> -->
+
                 <div class="infos-link-block infos-link-block-top">
                     <a class="nav-item-typo" href="./sanctum/">Plateforme d'Excellence</a>
                 </div>
@@ -252,172 +290,6 @@
                 <img class="inspi-cover-sanctum"
                     src="./public/content/medias/inspiration-plateform-cover-home-staminaclub.png" alt="">
                 <a href="./sanctum/" class="button3 nav-item-typo">Entrer dans Sanctum</a>
-            </div>
-
-
-
-
-
-
-
-            <!--  MVP / Lettres Privées -->
-            <div class="content-block-classic dark-block private-letters-container">
-
-                <img class="bg-private-letters" src="./public/content/svg-assets/background-private-letters.svg" alt="">
-                <img class="logo-join-club" src="./public/content/svg-assets/join-staminaclub-logo-word.svg" alt="">
-
-                <p class="text-small">
-                    Chaque dimanche, recevez les lettres privées de Louis Le Bras, le fondateur du Stamina Club. Ces
-                    lettres renferment des
-                    clés, des stratégies et des secrets de persévérance et de succès pour donner vie à votre vision.
-                    <br>
-                    <br>
-                    <span class="italic">Les Recettes Cachées du Succès.</span> <br>
-                    <span class="nav-item-typo">Pas de Spam. Jamais.</span>
-                </p>
-
-                <!-- <div id="mc_embed_signup">
-                    <form
-                        action="https://staminamemoriae.us17.list-manage.com/subscribe/post?u=49c2959a62e9693b6da57ec51&amp;id=571db5ad32&amp;f_id=004751e0f0"
-                        method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-                        target="_self">
-                        <div id="mc_embed_signup_scroll">
-                            <div class="mc-field-group">
-                                <input type="text" placeholder="Prénom" name="FNAME" class="required " id="mce-FNAME"
-                                    required />
-                            </div>
-                            <div class="mc-field-group">
-                                <input type="email" placeholder="E-mail" name="EMAIL" class="required email"
-                                    id="mce-EMAIL" required />
-                            </div>
-                            <div hidden="true"><input type="hidden" name="tags" value="6501716"></div>
-                            <div id="mce-responses" class="clear foot">
-                                <div class="response" id="mce-error-response" style="display: none"></div>
-                                <div class="response" id="mce-success-response" style="display: none"></div>
-                            </div>
-
-                            <div style="position: absolute; left: -5000px" aria-hidden="true">
-                                <input type="text" name="b_49c2959a62e9693b6da57ec51_571db5ad32" tabindex="-1"
-                                    value="" />
-                            </div>
-                            <div class="optionalParent ">
-                            
-                                <div class="clear foot">
-                                    <input type="submit" value="Go" name="subscribe" id="mc-embedded-subscribe"
-                                        class="nav-item-typo" />
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div> -->
-
-                <div class="fill-to-join-component">
-                    <!-- <p class="nav-item-typo">Rejoindre le Club</p> -->
-                    <div id="mc_embed_signup">
-                        <form
-                            action="https://staminamemoriae.us17.list-manage.com/subscribe/post?u=49c2959a62e9693b6da57ec51&amp;id=571db5ad32&amp;f_id=004751e0f0"
-                            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
-                            class="validate" target="_self">
-                            <div id="mc_embed_signup_scroll">
-                                <div class="div-inputs">
-                                    <div class="mc-field-group">
-                                        <input type="text" placeholder="Prénom" name="FNAME" class="required "
-                                            id="mce-FNAME" required />
-                                    </div>
-                                    <div class="mc-field-group">
-                                        <input type="email" placeholder="E-mail" name="EMAIL" class="required email"
-                                            id="mce-EMAIL" required />
-                                    </div>
-                                </div>
-                                <div hidden="true"><input type="hidden" name="tags" value="6501716"></div>
-                                <div id="mce-responses" class="clear foot">
-                                    <div class="response" id="mce-error-response" style="display: none"></div>
-                                    <div class="response" id="mce-success-response" style="display: none"></div>
-                                </div>
-
-                                <div style="position: absolute; left: -5000px" aria-hidden="true">
-                                    <input type="text" name="b_49c2959a62e9693b6da57ec51_571db5ad32" tabindex="-1"
-                                        value="" />
-                                </div>
-                                <div class="optionalParent ">
-                                    <!-- <img src="./public/content/brand-assets/monogram-staminaclub-dark.svg" alt=""> -->
-                                    <div class="clear foot">
-                                        <input type="submit" value="➺" name="subscribe" id="mc-embedded-subscribe"
-                                            class="nav-item-typo" />
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-
-                <img class="letter-image-join" src="./public/content/medias/letter-form-staminaclub.png" alt="">
-
-                <a href="" class="button3 nav-item-typo">En savoir plus</a>
-
-
-
-            </div>
-
-
-
-
-
-
-
-
-            <div class="main-spacer"></div>
-
-
-            <!--  LA CONCIERGERIE -->
-            <div class="big-text-classic intro-section-text">
-                <h3 class="main-title"><span class="italic">La</span> Conciergerie <br>
-                    du <span class="italic">Stamina Club™</span></h3>
-                <br>
-                Notre conciergerie, à votre service. <br>
-                L'essence, l'energie et les tactiques pour faire le plein d'inspiration et de vision. <br>
-                <p class="text-classic">
-
-
-                    <!-- <span class="italic">Interviews Exclusives, Art de vivre, Habitudes à succès, Linges et Essentiels,
-                        Clés de Bien-Être et
-                        d'Accomplissement,
-                        Coaching
-                        Privé, Inspiration, Plans et Stratégies.
-                    </span> -->
-                </p>
-            </div>
-
-
-            <!--  UTOPIA COLLECTION / MERCH -->
-            <div class="content-block-classic little-block-content light-block home-private-collection">
-                <div class="infos-link-block infos-link-block-top">
-                    <a class="nav-item-typo" href="">Stamina Private Collection</a>
-                    <a class="nav-item-typo" href="">↗︎</a>
-                </div>
-                <img src="./public/content/medias/test-model.png" alt="">
-                <a href="" class="button2 nav-item-typo">Découvrir maintenant</a>
-            </div>
-
-
-            <!--  Coaching 1:1 / Conciergerie -->
-            <div class="content-block-semi light-block">
-                <div class="infos-link-block infos-link-block-bottom">
-                    <a class="nav-item-typo" href="">Prendre RDV</a>
-                    <a class="nav-item-typo" href=""> ↗︎</a>
-                </div>
-                <div class="inside-mini-block color-dark">
-                    <p class="mini-block-title">
-                        Coaching Stratégique 1:1
-                    </p>
-                    <p class="text-small">L'Ultime programme pour créer une marque performante, stable et singulière.
-                        Secrets,
-                        Stratégies de Marques, Plans, Tactiques, Méthodes, Outils.</p>
-
-
-                </div>
-                <img class="floating-image-block-semi"
-                    src="./public/content/svg-assets/coaching-call-cover-stamina-club.svg" alt="">
             </div>
 
 
@@ -511,6 +383,11 @@
     <script src="./public/sources/js/sound-button.js"></script>
     <script src="./public/sources/js/burger.js"></script>
     <script src="./public/sources/js/fixed-header.js"></script>
+    <script>
+        $(function () {
+            $("#sidebar").load("sidebar.html");
+        });
+    </script>
 </body>
 
 </html>

@@ -20,6 +20,7 @@
   align-items: flex-start;
   width: calc(100%);
   margin-top: 0vh;
+  margin-bottom: 10vh;
 
   p {
     width: 100%;
@@ -52,8 +53,6 @@
 .container-content-lastones {
   width: 100%;
 }
-
-
 
 @media (max-width: 800px) {
   .lastone-container-home {
