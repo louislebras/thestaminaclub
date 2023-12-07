@@ -1,4 +1,5 @@
-<div id="sidebar" class="sidebar">
+let appHeader = `
+    
     <div class="close-sidebar nav-item-typo">
         ✦ Fermer le menu ✦
     </div>
@@ -27,4 +28,6 @@
     </div>
 
     <img class="monogram-sidebar" src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
-</div>
+
+`;
+document.getElementById("app-header").innerHTML = appHeader;
