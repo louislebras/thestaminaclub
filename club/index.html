@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Stamina Club®</title>
+    <link rel="stylesheet" href="../public/sources/css/main.css">
+    <link rel="stylesheet" href="../public/sources/css/home/main-home.css">
+    <link rel="stylesheet" href="../public/sources/css/sanctum/mainsanctum.css">
+    <link rel="stylesheet" href="../public/sources/css/sanctum/ressourcessanctum.css">
+    <link rel="stylesheet" href="../public/sources/css/club/mainclub.css">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <div class="loader">
+
+        <div class="container-img-loader">
+            <img src="../public/content/brand-assets/logo-loader.svg"
+                alt="trademark Stamina Vision® Louis Le Bras Donloulou®" />
+
+        </div>
+    </div>
+
+    <nav id="navSubpage">
+
+    </nav>
+    <div class="back-blur-layer-sidebar"></div>
+    <a href="../" class="logo-fixed-header">
+        <img src="../public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
+    </a>
+    <div class="sidebar" id="sidebar"></div>
+
+    <main>
+
+
+
+
+
+
+
+        <footer id="footer">
+
+
+        </footer>
+    </main>
+
+    <script src="../public/sources/js/burger.js"></script>
+
+    <script>
+        $(function () {
+            $("#sidebar").load("../components/sidebar.html");
+            $("#footer").load("../components/footer-dark-theme.html");
+            $("#navSubpage").load("../components/nav-subpage.html");
+
+        }); 
+    </script>
+</body>
+
+</html>
