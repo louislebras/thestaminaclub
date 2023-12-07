@@ -12,12 +12,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-    <script>
-        $(function () {
-            $("#sidebar").load("sidebar.html");
 
-        }); 
-    </script>
 
 
 </head>
@@ -45,7 +40,6 @@
         <img src="./public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
     </a>
     <div class="sidebar" id="sidebar"></div>
-
 
 
     <main>
@@ -389,10 +383,17 @@
 
         </footer>
     </main>
-    <script async src="header.js"></script>
+
     <script src="./public/sources/js/sound-button.js"></script>
     <script src="./public/sources/js/burger.js"></script>
     <script src="./public/sources/js/fixed-header.js"></script>
+
+    <script>
+        $(function () {
+            $("#sidebar").load("sidebar.html");
+
+        }); 
+    </script>
 
 
 </body>

@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../public/sources/css/sanctum/mainsanctum.css">
     <link rel="stylesheet" href="../public/sources/css/sanctum/ressourcessanctum.css">
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <body>
@@ -35,35 +37,7 @@
     <a href="../" class="logo-fixed-header">
         <img src="../public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
     </a>
-    <div class="sidebar">
-        <div class="close-sidebar nav-item-typo">
-            ✦ Close menu ✦
-        </div>
-
-        <!-- <p class="nav-item-typo indication-sidebar-txt">All you need<br>
-            for the rest of your life
-        </p> -->
-
-        <div class="nav-menu-sidebar">
-            <a class="nav-item-sidebar" href="../">Home</a>
-            <a class="nav-item-sidebar" href="../club/">Le Club</a>
-            <a class="nav-item-sidebar" href="">COLLECTION Privée</a>
-            <a class="nav-item-sidebar" href="../vision/">La Vision du Club</a>
-            <a class="nav-item-sidebar" href="./">S<span class="italic">A</span>NCTUM : Stratégie & Inspiration
-            </a>
-            <a class="nav-item-sidebar" href="">VIS<span class="italic">I</span>ON : Le Guide</a>
-
-            <a class="nav-item-sidebar" href="../privateletters/">Les Lettres Privées </a>
-
-            <a class="nav-item-sidebar" href="">Coaching Stratégique</a>
-            <a class="nav-item-sidebar" href="">Business Consulting</a>
-
-
-            <a class="nav-item-sidebar" href="/conciergerie/">La Conciergerie du Club</a>
-        </div>
-
-        <img class="monogram-sidebar" src="../public/content/brand-assets/monogram-staminaclub-white.svg" alt="">
-    </div>
+    <div class="sidebar" id="sidebar"></div>
 
     <main>
 
@@ -267,7 +241,7 @@
             </a> -->
 
 
-            
+
 
         </div>
         </div>
@@ -366,6 +340,12 @@
 
     <script src="../public/sources/js/burger.js"></script>
     <script src="../public/sources/js/fixed-header.js"></script>
+    <script>
+        $(function () {
+            $("#sidebar").load("../sidebar.html");
+
+        }); 
+    </script>
 </body>
 
 </html>
